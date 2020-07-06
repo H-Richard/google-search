@@ -35,8 +35,13 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.4.0",
+    "cz-conventional-changelog": "3.2.0",
     "eslint-config-airbnb-typescript-prettier": "^3.1.0",
     "prettier": "^2.0.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
