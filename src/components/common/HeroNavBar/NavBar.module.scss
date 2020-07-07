@@ -1,0 +1,75 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    margin-top: 0;
+    justify-content: space-between;
+    font-size: 13px;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Left {
+    display: flex;
+    justify-content: space-around;
+    min-width: 100px;
+    padding: 25px;
+    opacity: 0.75;
+}
+
+.Right {
+    min-width: 240px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    float: right;
+    right: 0px;
+    margin-right: 0;
+    padding: 25px;
+}
+
+.button {
+    color: white;
+    display: inline-block;
+    background-color: #4386fb;
+    margin-top: -6px;
+    padding: 0 12px;
+    font-weight: bold;
+    line-height: 28px;
+    height: 28px;
+    border: 1px solid #4386fb;
+    border-radius: 2px;
+}
+
+.button:hover{
+    text-decoration: none;
+    box-shadow: 0px 0px 2px #4285f4;
+}
+
+.icon {
+    height: 24px;
+    margin-top: -4px;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 560px){
+    .Right {
+        width: 100px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .Left {
+        padding-left: 10px;
+        padding-right: 0px;
+        min-width: 80px;
+    }
+}

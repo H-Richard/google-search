@@ -1,0 +1,27 @@
+.container {
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.img {
+    flex: 1;
+}
+
+.ButtonContainer {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main {
+    p {
+        font-size: 13px;
+    }
+    text-align: center;
+    justify-content: center;
+}
