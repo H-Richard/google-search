@@ -88,6 +88,7 @@ const SearchBar: React.FC = (): ReactElement => {
       <input
         // eslint-disable-next-line jsx-a11y/no-autofocus
         autoFocus
+        readOnly
         className={styles.searchBar}
         value={state.currentInput}
       />

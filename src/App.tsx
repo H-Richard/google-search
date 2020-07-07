@@ -2,6 +2,7 @@ import React, { ReactElement, useState, useCallback, useEffect } from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import Hero from './pages/Hero/Hero';
+import SearchNav from './components/NavBar/NavBar';
 
 const App: React.FC = (): ReactElement => {
   const [state, setState] = useState({
@@ -29,7 +30,11 @@ const App: React.FC = (): ReactElement => {
       </Switch>
     );
   }
-  return <></>;
+  return (
+    <div>
+      <SearchNav />
+    </div>
+  );
 };
 
 export default App;
