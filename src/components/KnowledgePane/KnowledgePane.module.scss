@@ -1,0 +1,45 @@
+.Container {
+    border-top: 1px solid rgb(223, 225, 229);
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .SocialText {
+        color: #222;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        color: #222;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.57;
+        margin-top: -7px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #1a0dab;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    .Header {
+        color: #222;
+        font-size: 20px;
+    }
+}
+
+.SocialPanel {
+    background-color: red;
+    width: 100%;
+    height: 100px;
+}
+
+.SocialContainer {
+    margin-top: -12px;
+    display: flex;
+}

@@ -1,0 +1,41 @@
+.Container {
+    width: 72px;
+    height: 72px;
+    text-align: left;
+    display: block;
+    padding-bottom: 40px;
+    padding-right: 14px;
+    line-height: 16px;
+
+    a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #1a0dab;
+    }
+
+    
+    .text {
+        color: #70757a;
+        font-size: 12px;
+        padding-top: 10px;
+        line-height: normal;
+    }
+}
+
+
+.Container:hover{
+    cursor: pointer;
+
+    a {
+        text-decoration: underline;
+    }
+
+    p {
+        text-decoration: underline;
+    }
+}
+
+.img {
+    width: 72px;
+    height: 72px;
+}

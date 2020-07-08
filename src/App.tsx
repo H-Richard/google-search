@@ -3,6 +3,7 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import Hero from './pages/Hero/Hero';
 import SearchNav from './components/NavBar/NavBar';
+import All from './pages/All/All';
 
 const App: React.FC = (): ReactElement => {
   const [state, setState] = useState({
@@ -31,8 +32,11 @@ const App: React.FC = (): ReactElement => {
     );
   }
   return (
-    <div>
+    <div className="main-container">
       <SearchNav />
+      <Switch>
+        <Route path="/" exact render={(): ReactElement => <All />} />
+      </Switch>
     </div>
   );
 };

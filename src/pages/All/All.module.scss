@@ -1,0 +1,199 @@
+.Container {
+    background-color: white;
+    margin-left: 150px;
+    min-height: 86.2vh;
+}
+
+.p1 {
+    color: #70757a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 4px;
+}
+
+.Results {
+    width: 650px;
+    height: auto;
+    margin-right: 10px;
+    min-width: 600px;
+}
+
+.Knowledge {
+    width: 450px;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.Flex {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1150px;
+}
+
+.imageContainer {
+    height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.borderEdge {
+    border-top: 1px solid white;
+}
+
+.bigCol {
+    width: 150px;
+    height: 201px;
+    border-top-left-radius: 8px;
+    border-right: 2px solid white;
+}
+
+.col {
+    border-top-right-radius: 8px;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 50px;
+    width: auto;
+}
+
+.top-right {
+    border-top-right-radius: 8px;
+}
+
+.top-left {
+    border-top-left-radius: 8px;
+}
+
+.img1 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.imgCol {
+    width: 34%;
+}
+
+.title {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #70757a;
+    padding-left: 15px;
+    margin-top: -5px;
+}
+
+.borderTop {
+    border-right: 1px solid white;
+}
+
+.borderBottom{
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+@media only screen and (max-width: 1050px){
+    .Container {
+        background-color: white;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .p1 {
+        padding-left: 10px;
+    }
+    
+    .Results {
+        height: auto;
+        width: 98%;
+        margin-left: 1%;
+        min-width: 0;
+        order: 1;
+    }
+    
+    .Knowledge {
+        width: 98%;
+        margin-left: 1%;
+        border: 1px solid rgb(223, 225, 229);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        order: 0;
+        margin-bottom: 10px;
+    }
+    
+    .Flex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .imageContainer {
+        min-height: 22%;
+        max-width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .borderEdge {
+        border-top: 1px solid white;
+    }
+    
+    .bigCol {
+        display: flex;
+        height: auto;
+        max-width: 140%;
+        min-width: 32%;
+        width: 32%;
+        height: 100.5%;
+        border-top-left-radius: 8px;
+        border-right: 2px solid white;
+    }
+    
+    .col {
+        border-top-right-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        min-height: 11%;
+    }
+    
+    .img1 {
+        overflow: hidden;
+        object-fit: cover;
+        max-width: 100%;
+    }
+    
+    .imgCol {
+        display: flex;
+        flex-direction: column;
+    }
+  }

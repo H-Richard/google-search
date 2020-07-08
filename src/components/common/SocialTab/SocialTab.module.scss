@@ -1,0 +1,22 @@
+.Container {
+    width: 72px;
+    height: 72px;
+    text-align: center;
+    display: block;
+
+    a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #1a0dab;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+
+.Container:hover{
+    cursor: pointer;
+
+    a {
+        text-decoration: underline;
+    }
+}
