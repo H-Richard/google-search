@@ -12,7 +12,10 @@ code {
     monospace;
 }
 
-body, html {
-  overflow-x: hidden;
-  width: 100%;
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
 }
