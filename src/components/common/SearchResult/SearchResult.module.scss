@@ -1,0 +1,39 @@
+.Container {
+    font-family: Arial, Helvetica, sans-serif;
+
+    .title {
+        color: #1a0dab;
+        font-size: 20px;
+    }
+
+    .link {
+        margin-top: -1px;
+        font-size: 16px;
+        color: #006621;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .link:hover{
+        text-decoration: none;
+    }
+
+    .LinkContainer {
+        display: block;
+        text-decoration: none;
+    }
+
+    .LinkContainer:hover{
+        .title {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        color: #545454;
+        font-size: 14px;
+        margin-top: -16px;
+        line-height: 1.57;
+    }
+}
