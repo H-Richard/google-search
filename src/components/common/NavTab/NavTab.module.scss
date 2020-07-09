@@ -52,3 +52,12 @@
         padding-right: 23px;
     }
 }
+
+
+
+@media only screen and (max-width: 335px) {
+    .container, .containerActive {
+        padding-left: 3px;
+        padding-right: 20px;
+    }
+}

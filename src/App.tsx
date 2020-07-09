@@ -5,6 +5,7 @@ import Hero from './pages/Hero/Hero';
 import SearchNav from './components/NavBar/NavBar';
 import All from './pages/All/All';
 import Footer from './components/Footer/Footer';
+import Images from './pages/Images/Images';
 
 const App: React.FC = (): ReactElement => {
   const [state, setState] = useState({
@@ -36,7 +37,8 @@ const App: React.FC = (): ReactElement => {
     <div className="main-container">
       <SearchNav />
       <Switch>
-        <Route path="/" exact render={(): ReactElement => <All />} />
+        <Route path="/" exact component={All} />
+        <Route path="/images" exact component={Images} />
       </Switch>
       <Footer />
     </div>
