@@ -15,6 +15,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-fade-in": "^1.1.0",
+    "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^5.2.0",
     "react-router-ga": "^1.2.3",
     "react-scripts": "3.4.1",
