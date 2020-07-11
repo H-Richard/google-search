@@ -23,7 +23,7 @@ const imgs = {
 const All: React.FC = () => {
   return (
     <FadeIn delay={160}>
-      <div className={styles.Container}>
+      <div className="page-container">
         <FadeIn delay={200}>
           <p className={styles.p1}>{`About ${ResultsArray.length} results (${
             (window.performance.timing.domContentLoadedEventEnd -
@@ -32,7 +32,7 @@ const All: React.FC = () => {
           } seconds)`}</p>
         </FadeIn>
         <div className={styles.Flex}>
-          <div className={styles.Results}>
+          <div className="results-container">
             <FadeIn delay={160}>
               {ResultsArray.map((o) => {
                 return <Result {...o} key={o.link} />;
