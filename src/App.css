@@ -42,3 +42,35 @@
   display: flex;
   flex-direction: column;
 }
+
+.page-container {
+  background-color: white;
+  margin-left: 150px;
+}
+
+.results-container {
+  width: 650px;
+  height: auto;
+  margin-right: 10px;
+  min-width: 600px;
+}
+
+@media only screen and (max-width: 1050px){
+  .page-container {
+    background-color: white;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .results-container {
+    height: auto;
+    width: 96%;
+    margin-left: 2%;
+    min-width: 0;
+    order: 1;
+  }
+
+  .search-result {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  }
+}

@@ -1,22 +1,9 @@
-.Container {
-    background-color: white;
-    margin-left: 150px;
-}
-
 .p1 {
     color: #70757a;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     padding-left: 4px;
 }
-
-.Results {
-    width: 650px;
-    height: auto;
-    margin-right: 10px;
-    min-width: 600px;
-}
-
 .Knowledge {
     width: 450px;
     border: 1px solid rgb(223, 225, 229);
@@ -112,22 +99,8 @@
 }
 
 @media only screen and (max-width: 1050px){
-    .Container {
-        background-color: white;
-        width: 100%;
-        margin-left: 0;
-    }
-
     .p1 {
         padding-left: 10px;
-    }
-    
-    .Results {
-        height: auto;
-        width: 96%;
-        margin-left: 2%;
-        min-width: 0;
-        order: 1;
     }
     
     .Knowledge {

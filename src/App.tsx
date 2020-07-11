@@ -6,6 +6,7 @@ import SearchNav from './components/NavBar/NavBar';
 import All from './pages/All/All';
 import Footer from './components/Footer/Footer';
 import Images from './pages/Images/Images';
+import Videos from './pages/Videos/Videos';
 
 const App: React.FC = (): ReactElement => {
   const [state, setState] = useState({
@@ -39,6 +40,7 @@ const App: React.FC = (): ReactElement => {
       <Switch>
         <Route path="/" exact component={All} />
         <Route path="/images" exact component={Images} />
+        <Route path="/videos" exact component={Videos} />
       </Switch>
       <Footer />
     </div>
