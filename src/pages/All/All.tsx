@@ -9,6 +9,7 @@ import Result from '../../components/common/SearchResult/SearchResult';
 import ResultsArray from './ResultsArray';
 
 import styles from './All.module.scss';
+import LoadTime from '../../components/common/LoadTime/LoadTime';
 
 const imgs = {
   1: require('./imgs/1.jpg'),
@@ -25,11 +26,7 @@ const All: React.FC = () => {
     <FadeIn delay={160}>
       <div className="page-container">
         <FadeIn delay={200}>
-          <p className={styles.p1}>{`About ${ResultsArray.length} results (${
-            (window.performance.timing.domContentLoadedEventEnd -
-              window.performance.timing.navigationStart) /
-            1000
-          } seconds)`}</p>
+          <LoadTime length={ResultsArray.length} />
         </FadeIn>
         <div className={styles.Flex}>
           <div className="results-container">

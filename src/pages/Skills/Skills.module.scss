@@ -1,0 +1,32 @@
+.Flex {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+.side {
+    width: 450px;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 8px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1050px){ 
+    .Flex {
+        flex-direction: column;
+    }
+
+    .side {
+        width: 94%;
+        margin-left: 1%;
+        padding: 2%;
+        order: 0;
+    }
+ }
