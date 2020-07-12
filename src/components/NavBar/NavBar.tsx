@@ -29,9 +29,9 @@ const SearchNav: React.FC = () => {
       to: '/projects',
     },
     {
-      text: 'News',
-      icon: 'news',
-      to: '/news',
+      text: 'Skills',
+      icon: 'finance',
+      to: '/skills',
     },
     {
       text: 'Videos',
