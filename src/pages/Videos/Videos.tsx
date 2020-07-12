@@ -6,16 +6,13 @@ import ResultsArray from './ResultsArray';
 import VideoResult from '../../components/common/VideoResult/VideoResult';
 
 import styles from './Videos.module.scss';
+import LoadTime from '../../components/common/LoadTime/LoadTime';
 
 const Videos: React.FC = () => {
   return (
     <div className="page-container">
       <FadeIn delay={200}>
-        <p className={styles.p1}>{`About ${ResultsArray.length} results (${
-          (window.performance.timing.domContentLoadedEventEnd -
-            window.performance.timing.navigationStart) /
-          1000
-        } seconds)`}</p>
+        <LoadTime length={ResultsArray.length} />
       </FadeIn>
       <div className={styles.Flex}>
         <div className="results-container">
