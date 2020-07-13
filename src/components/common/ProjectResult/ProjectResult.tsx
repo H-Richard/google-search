@@ -1,15 +1,38 @@
-import React from 'react';
+/* eslint-disable no-restricted-syntax */
+import React, { ReactElement } from 'react';
 
 import styles from './ProjectResult.module.scss';
 
 interface Props {
   title: string;
-  source?: string;
+  source: string;
   live?: string;
   description: string;
   img: string;
   technologies: string[];
 }
+
+const Breadcrumbs: React.FC<{ url: URL }> = ({
+  url,
+}: {
+  url: URL;
+}): ReactElement => {
+  let base = url.hostname;
+  const paths = url.pathname.split('/');
+  const res: ReactElement[] = [<a href="https://github.com">github.com</a>];
+  for (const path of paths) {
+    if (path !== '') {
+      base += `/${path}`;
+      res.push(
+        <>
+          <span> › </span>
+          <a href={`https://${base}`}>{path}</a>
+        </>
+      );
+    }
+  }
+  return <span className={styles.breadcrumbs}>{res}</span>;
+};
 
 const ProjectResult: React.FC<Props> = ({
   title,
@@ -25,14 +48,14 @@ const ProjectResult: React.FC<Props> = ({
         <div className={styles.row}>
           <img src={img} alt={title} className={styles.thumbnail} />
           <div className={styles.content}>
-            <a href={live ?? source} className={styles.linkContainer}>
-              <p className={styles.link}>{source ?? live}</p>
+            <div className={styles.linkContainer}>
+              <Breadcrumbs url={new URL(source)} />
               <div className={styles.titleContainer}>
                 <a href={live ?? source} className={styles.title}>
                   {title}
                 </a>
               </div>
-            </a>
+            </div>
             <div className={styles.technologyList}>
               {technologies.map((text: string) => (
                 <>

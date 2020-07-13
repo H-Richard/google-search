@@ -39,6 +39,24 @@
   padding: 0 10px;
 }
 
+.breadcrumbs {
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+    color: #5f6368;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: #5f6368;
+  }
+}
+
 .title {
   color: #1a0dab;
   font-size: 20px;
@@ -46,6 +64,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   text-decoration: none;
+  margin-top: 4px;
 }
 
 .thumbnail {
@@ -82,12 +101,6 @@
   margin: 0;
 }
 
-.linkContainer:hover{
-  .title {
-      text-decoration: underline;
-  }
-}
-
 .technologyList {
   @extend .row;
   flex-wrap: wrap;
@@ -104,6 +117,10 @@
 }
 
 @media only screen and (max-width: 950px){
+  .breadcrumbs {
+    font-size: 12px;
+  }
+
   .thumbnail {
     width: 100px;
     height: auto;
