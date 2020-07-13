@@ -1,0 +1,152 @@
+.container {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 650px;
+  margin-top: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 10px;
+
+  .linkContainer {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    visibility: visible;
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.technology {
+  align-items: center;
+  border: 1px #DFE1E5 solid;
+  border-radius: 20px;
+  display: flex;
+  height: 32px;
+  padding: 0 10px;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+    color: #5f6368;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: #5f6368;
+  }
+}
+
+.title {
+  color: #1a0dab;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  margin-top: 4px;
+}
+
+.thumbnail {
+  width: 200px;
+  min-height: 100px;
+  object-fit: contain;
+}
+
+.link {
+  color: #202124;
+  margin: 0;
+  font-size: 13px;
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.linkContainer {
+  display: block;
+  text-decoration: none;
+  p:link {
+    text-decoration: none;
+  }
+}
+
+.description {
+  display: block;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.nostyle {
+  margin: 0;
+}
+
+.technologyList {
+  @extend .row;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.technologyList > * {
+  margin: 1px 0;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 950px){
+  .breadcrumbs {
+    font-size: 12px;
+  }
+
+  .thumbnail {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .technology {
+    padding: 0 7px;
+  }
+
+  .technology {
+    font-size: 12px;
+    padding: 0px 6px;
+  }
+
+  .description {
+    max-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .description {
+    font-size: 12px;
+    max-height: 14px;
+  }
+}

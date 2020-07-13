@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 import Images from './pages/Images/Images';
 import Videos from './pages/Videos/Videos';
 import Skills from './pages/Skills/Skills';
+import Projects from './pages/Projects/Projects';
 
 const App: React.FC = (): ReactElement => {
   const [state, setState] = useState({
@@ -43,6 +44,7 @@ const App: React.FC = (): ReactElement => {
         <Route path="/images" exact component={Images} />
         <Route path="/videos" exact component={Videos} />
         <Route path="/skills" exact component={Skills} />
+        <Route path="/projects" exact component={Projects} />
       </Switch>
       <Footer />
     </div>
