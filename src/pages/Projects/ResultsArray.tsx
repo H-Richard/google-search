@@ -1,5 +1,23 @@
 const ResultsArray = [
   {
+    title: 'Google Search',
+    source: 'https://github.com/H-Richard/google-search',
+    live: 'https://h-richard.com/',
+    description:
+      'My personal website in the form and style of a google search.',
+    img: 'https://i.imgur.com/FRIKL1n.png',
+    technologies: ['React', 'TypeScript'],
+  },
+  {
+    title: 'Tic Tac Toe AI',
+    source: 'https://github.com/H-Richard/tic-tac-toe-AI',
+    live: 'https://h-richard.github.io/tic-tac-toe-AI/',
+    description:
+      'Tic Tac Toe game that matches you against an unbeatable minimax algorithm.',
+    img: 'https://i.imgur.com/kUs3OHz.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
     title: 'AMACSS Database',
     source: 'https://github.com/amacss-utsc/amacss_database',
     description: 'Restful backend for managing registered club members',
