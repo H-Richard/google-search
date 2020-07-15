@@ -57,7 +57,12 @@ const ProjectResult: React.FC<Props> = ({
             <div className={styles.linkContainer}>
               <Breadcrumbs url={new URL(source)} />
               <div className={styles.titleContainer}>
-                <a href={live ?? source} className={styles.title}>
+                <a
+                  href={live ?? source}
+                  className={styles.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {title}
                 </a>
               </div>
