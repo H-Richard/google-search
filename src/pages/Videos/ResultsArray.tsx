@@ -1,5 +1,11 @@
 const ResultsArray = [
   {
+    title: 'Building a GraphQL Server with Golang and MongoDB',
+    id: 'FkpCeXbXVhU',
+    description:
+      "Building a GraphQL Server with Golang, MongoDB and live commentary. Learn to setup a simple GraphQL Server from scratch.",
+  },
+  {
     title: 'Build a GraphQL Server with Deno and MongoDB',
     id: 'CNz7G6mF9o0',
     description:
