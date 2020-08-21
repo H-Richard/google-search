@@ -2,7 +2,7 @@ const ResultsAray = [
   {
     title: 'Front End Engineer, Retail Rope',
     link: 'https://github.com/noahnu/pos_frontend',
-    description: `Developing a POS application with React, Typescript, and Redux(Ducks Pattern & Saga). Increased inventory search and rendering performance by 400% using virtualization and infinite loading...`,
+    description: `Developing a POS application with React, Typescript, and Redux (Ducks Pattern & Saga). Increased inventory search and rendering performance by 400% using virtualization and infinite loading...`,
   },
   {
     title: 'Software Engineer Intern, IBM',
