@@ -66,7 +66,7 @@ const InfoPanel: React.FC = () => {
         Engineer Intern at <b>IBM</b>...
       </p>
       <p>
-        <b>Born: </b> Feburary, 2000 (age 20 years),{' '}
+        <b>Born: </b> Februrary, 2000 (age 20 years),{' '}
         <a
           href="https://en.wikipedia.org/wiki/Shenyang"
           target="_blank"
