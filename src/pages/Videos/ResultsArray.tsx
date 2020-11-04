@@ -1,5 +1,10 @@
 const ResultsArray = [
   {
+    title: 'Analyzing NBA Championships with Graph Theory',
+    id: 'bO_VlATlQDU',
+    description: `Last month 2020 NBA season ended with the LA Lakers winning their 17th franchise championship, at the same time, my Graph Theory course has been teaching the PageRank Algorithm. Today I'm going to see if I can apply what I've learned to analyze some of the more recent NBA Championship runs.`,
+  },
+  {
     title: 'Building Recursive Components in React',
     id: 'a5aumoJWbKk',
     description: `I took a nap earlier yesterday and had a dream about recursive components in React. 
