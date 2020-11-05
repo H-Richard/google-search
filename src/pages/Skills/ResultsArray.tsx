@@ -19,7 +19,7 @@ const ResultsArray = [
     color: '#00a1a7',
   },
   {
-    title: 'Java',
+    title: 'Python',
     percent: 75,
     proficiency: 'Advanced',
     color: '#00a1a7',
@@ -37,7 +37,7 @@ const ResultsArray = [
     color: '#ffc107',
   },
   {
-    title: 'Python',
+    title: 'Java',
     percent: 60,
     proficiency: 'Intermediate',
     color: '#ffc107',
@@ -134,6 +134,12 @@ const ResultsArray = [
     color: '#ffc107',
   },
   {
+    title: 'NumPy',
+    percent: 45,
+    proficiency: 'Familiar',
+    color: '#ffc107',
+  },
+  {
     title: 'Helm (k8s)',
     percent: 43,
     proficiency: 'Familiar',
@@ -152,7 +158,7 @@ const ResultsArray = [
     color: '#ffc107',
   },
   {
-    title: 'Pytorch',
+    title: 'PyTorch',
     percent: 37,
     proficiency: 'Familiar',
     color: '#ffc107',
@@ -160,6 +166,12 @@ const ResultsArray = [
   {
     title: 'OpenCV',
     percent: 32,
+    proficiency: 'Familiar',
+    color: '#dc3545',
+  },
+  {
+    title: 'Pandas',
+    percent: 31,
     proficiency: 'Familiar',
     color: '#dc3545',
   },
