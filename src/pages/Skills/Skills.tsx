@@ -42,9 +42,8 @@ const Skills: React.FC = () => {
             <br />
             <span>Familiar: </span>
             <span>
-              In the process of learning the technology, adequate coding quality
-              but will probably be asking questions and googling non stop if
-              assigned task.
+              In the process of learning the technology, knows basic out of the
+              box capabilities.
             </span>
           </div>
         </FadeIn>

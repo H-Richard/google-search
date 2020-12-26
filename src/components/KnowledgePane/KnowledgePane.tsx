@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
+import React, { useMemo } from 'react';
 import SocialTab from '../common/SocialTab/SocialTab';
 import PeopleTab from '../common/PeopleTab/PeopleTab';
 
@@ -35,8 +35,7 @@ const socials = [
 
 const people = [
   {
-    link:
-      'https://www.google.com/search?sa=X&rlz=1C1CHBF_enCA807CA807&biw=2560&bih=1297&sxsrf=ACYBGNQwd6CNGfx2ifxUkv6ERdWlYWlgIA:1577939610639&q=Dwayne+Johnson&stick=H4sIAAAAAAAAAONgFuLUz9U3MDLNMy5QAjMNTdLji7X4AlKLivPzgjNTUssTK4sXsfK5AOm8VAWv_Iw8oMQOVkYAwBuC1DwAAAA&ved=2ahUKEwjWh-CPi-TmAhWEVt8KHS52D0AQxA0wJ3oECBAQSA',
+    link: 'https://www.google.com/search?q=Dwayne%20Johnson',
     icon: 'dwayne',
     title: 'Dwayne Johnson',
     description: 'Twin Brother',
@@ -56,6 +55,14 @@ const people = [
 ];
 
 const InfoPanel: React.FC = () => {
+  const age = useMemo(
+    () =>
+      Math.floor(
+        (new Date().getTime() - new Date('2000/12/25').getTime()) / 31536000000 // number of ms in a year
+      ),
+    []
+  );
+
   return (
     <div className={styles.Container}>
       <p className={styles.SocialText} />
@@ -66,7 +73,7 @@ const InfoPanel: React.FC = () => {
         Engineer Intern at <b>IBM</b>...
       </p>
       <p>
-        <b>Born: </b> Februrary, 2000 (age 20 years),{' '}
+        <b>Born: </b> Februrary, 2000 (age {age} years),{' '}
         <a
           href="https://en.wikipedia.org/wiki/Shenyang"
           target="_blank"
