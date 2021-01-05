@@ -20,7 +20,12 @@ const Breadcrumbs: React.FC<{ url: URL }> = ({
   let base = url.hostname;
   const paths = url.pathname.split('/');
   const res: ReactElement[] = [
-    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+    <a
+      href="https://github.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      key="root"
+    >
       github.com
     </a>,
   ];
@@ -30,7 +35,12 @@ const Breadcrumbs: React.FC<{ url: URL }> = ({
       res.push(
         <>
           <span> › </span>
-          <a href={`https://${base}`} target="_blank" rel="noopener noreferrer">
+          <a
+            href={`https://${base}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            key="path"
+          >
             {path}
           </a>
         </>

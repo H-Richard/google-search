@@ -12,22 +12,22 @@ const ResultsAray = [
   {
     title: 'Software Engineer Intern, IBM',
     link: 'https://www.ibm.com/cloud',
-    description: `Developed and maintained various microservices using Elixir, Python, Ruby, and Node. Deployed microservices to Kubernetes with Helm, built various frontend components with ReactJS and VueJS...`,
+    description: `Developed and maintained various microservices using Elixir, Python, Ruby, and JavaScript/TypeScript. Deployed microservices to Kubernetes with Helm, built various frontend components with React and Vue...`,
   },
   {
     title: 'Lead Developer, Network Re-Engineered Inc',
     link: 'https://www.campusconnect.ca/company',
-    description: `Working on the rewrite of our Campus Connect application using React Native, Typescript, Firebase and Redux...`,
+    description: `Leveraged React Native, TypeScript, Firebase and Redux to lead the rewrite our social media platform Campus Connect...`,
   },
   {
     title: 'Project Lead, Developer Student Clubs',
     link: 'https://utsc.developerstudentclubs.ca/',
-    description: `Lead a team of four in the development of a Flutter Application to participate in Google's 2020 DSC solutions challenge...`,
+    description: `Lead teams in the development of various projects leveraging Flutter, Golang, TypeScript, React, Material UI and Firebase...`,
   },
   {
     title: 'Front End Developer, Illustrious Comics',
     link: 'https://www.utsc.utoronto.ca/thehub/startup-overview',
-    description: `Developed the Front End for a comic reader web application using NextJS and TypeScript, with an AWS graphQL backend. Developed frontend payment integration with StripeJS...`,
+    description: `Developed the Front End for a comic reader web application leveraging Next, TypeScript, with an AWS graphQL backend. Developed frontend payment integration with StripeJS...`,
   },
   {
     title:
@@ -38,7 +38,7 @@ const ResultsAray = [
   {
     title: 'Fry Cook, Highland Fish and Chips',
     link: 'https://www.yelp.ca/biz/highland-fish-and-chips-scarborough/',
-    description: `Prepped and Portioned Halibut, Haddock and Cod for service, in charge of restaurant oil/lard management...`,
+    description: `Fried, Prepped and Portioned Halibut, Haddock and Cod for service, in charge of restaurant oil/lard management...`,
   },
   {
     title: 'Line Cook, Via Cibo | Italian Street Food',
@@ -49,11 +49,10 @@ const ResultsAray = [
   {
     title: 'Sous Chef, The Roux',
     link: 'http://www.rouxstir.ca/',
-    description: `Worked alongside chef de cuisine to manage kitchen 
+    description: `Worked alongside Chef De Cuisine to manage kitchen 
                     activities including staff, menu planning, 
                     sanitary/safety standards as well as overall restaurant performance.
-                    In charge of all restaurant pastries including: Pizza Dough, 
-                    Croissants, 3 types of Waffle Mix, Beignets, Scones... Main cooking repertoire includes a large variety of traditional French and southern inspired dishes.`,
+                    In charge of all restaurant pastries including: Croissants, 3 types of Waffle Mix, Cornbread, Beignets, Scones... Main cooking repertoire includes a large variety of traditional French and southern inspired dishes...`,
   },
 ];
 

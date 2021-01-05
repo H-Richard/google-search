@@ -66,6 +66,12 @@ const ResultsArray = [
     proficiency: 'Familiar',
     color: '#dc3545',
   },
+  {
+    title: 'Assembly',
+    percent: 35,
+    proficiency: 'Familiar',
+    color: '#dc3545',
+  },
   'Frameworks & Technologies',
   {
     title: 'React',
@@ -104,7 +110,7 @@ const ResultsArray = [
     color: '#00a1a7',
   },
   {
-    title: 'Flutter',
+    title: 'Flutter (Dart)',
     percent: 80,
     proficiency: 'Advanced',
     color: '#00a1a7',
@@ -136,7 +142,7 @@ const ResultsArray = [
   {
     title: 'NumPy',
     percent: 45,
-    proficiency: 'Familiar',
+    proficiency: 'Intermediate',
     color: '#ffc107',
   },
   {
