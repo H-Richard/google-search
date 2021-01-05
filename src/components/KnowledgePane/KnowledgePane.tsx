@@ -63,7 +63,7 @@ const InfoPanel: React.FC = () => {
         XiangQian &quot;Richard&quot; Hong is a third-year Computer Science and
         Statistics student, specializing in <b>Software Engineering</b> and{' '}
         <b>Statistical Machine Learning</b>. He currently works as a Software
-        Engineer Intern at <b>IBM</b>...
+        Developer Intern at <b>Shopify</b>...
       </p>
       <p>
         <b>Born: </b> Februrary, 2000 (age 20 years),{' '}
@@ -79,7 +79,7 @@ const InfoPanel: React.FC = () => {
         <b>Height: </b> 1.73 m (5 feet 8 and 7/64 inches)*
       </p>
       <p>
-        <b>Net Worth: </b> CAD $86.9 Dollars (December 2019)
+        <b>Net Worth: </b> CAD $76.9 Dollars (November 2020)
       </p>
       <p>
         <b>Education: </b>{' '}
