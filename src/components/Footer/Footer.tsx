@@ -10,7 +10,9 @@ const Footer: React.FC = () => {
         Proudly built with React, Typescript and{' '}
         <span role="img" aria-label="heart">
           ❤️.
-        </span>{' '}
+        </span>
+      </p>
+      <p>
         <a
           href="https://github.com/H-Richard/google-search"
           target="_blank"

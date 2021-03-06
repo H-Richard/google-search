@@ -72,6 +72,12 @@ const ResultsArray = [
     proficiency: 'Familiar',
     color: '#dc3545',
   },
+  {
+    title: 'Racket',
+    percent: 12,
+    proficiency: 'Familiar',
+    color: '#dc3545',
+  },
   'Frameworks & Technologies',
   {
     title: 'React',

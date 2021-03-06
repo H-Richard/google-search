@@ -1,41 +1,68 @@
 .Container {
-    width: 72px;
-    height: 72px;
-    text-align: left;
-    display: block;
-    padding-bottom: 40px;
-    padding-right: 14px;
-    line-height: 16px;
+  width: 72px;
+  height: 72px;
+  text-align: left;
+  display: block;
+  padding-bottom: 40px;
+  padding-right: 14px;
+  line-height: 16px;
 
-    a {
-        font-size: 14px;
-        text-decoration: none;
-        color: #1a0dab;
-    }
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #1a0dab;
+  }
 
-    
-    .text {
-        color: #70757a;
-        font-size: 12px;
-        padding-top: 10px;
-        line-height: normal;
-    }
+  .text {
+    color: #70757a;
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: normal;
+  }
 }
 
+.Container:hover {
+  cursor: pointer;
 
-.Container:hover{
-    cursor: pointer;
+  a {
+    text-decoration: underline;
+  }
 
-    a {
-        text-decoration: underline;
-    }
-
-    p {
-        text-decoration: underline;
-    }
+  p {
+    text-decoration: underline;
+  }
 }
 
 .img {
-    width: 72px;
-    height: 72px;
+  max-width: 72px;
+  max-height: 72px;
+}
+
+@media only screen and (max-width: 400px) {
+  .img,
+  .Container {
+    width: 54px;
+    height: 54px;
+  }
+
+  .text {
+    padding-top: 3px;
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .img,
+  .Container {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .img,
+  .Container {
+    width: 40px;
+    height: 40px;
+  }
 }
