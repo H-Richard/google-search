@@ -52,6 +52,18 @@ const people = [
     title: 'Jeff Zhao',
     description: 'Eldest Student',
   },
+  {
+    link: 'https://ozcer.github.io/',
+    icon: 'oscar',
+    title: 'Oscar Lin',
+    description: 'Favorite Spotter',
+  },
+  {
+    link: 'https://fpunny.xyz/',
+    icon: 'fred',
+    title: 'Frederic Pun',
+    description: 'Owo',
+  },
 ];
 
 const InfoPanel: React.FC = () => {

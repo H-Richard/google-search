@@ -18,7 +18,6 @@ const imgs = {
   4: require('./imgs/4.jpg'),
   5: require('./imgs/5.jpg'),
   6: require('./imgs/6.jpg'),
-  7: require('./imgs/7.jpg'),
 };
 
 const All: React.FC = () => {
@@ -50,11 +49,6 @@ const All: React.FC = () => {
                 <div className={styles.col}>
                   <div className={[styles.row, styles['top-right']].join(' ')}>
                     <img
-                      src={imgs[5]}
-                      className={[styles.img1, styles.borderTop].join(' ')}
-                      alt=""
-                    />
-                    <img
                       src={imgs[3]}
                       className={[styles.img1, styles.borderTop].join(' ')}
                       alt=""
@@ -77,8 +71,8 @@ const All: React.FC = () => {
                       alt=""
                     />
                     <img
-                      src={imgs[7]}
-                      className={[styles.img1, styles.borderEdge].join(' ')}
+                      src={imgs[5]}
+                      className={[styles.img1, styles.borderTop].join(' ')}
                       alt=""
                     />
                   </div>

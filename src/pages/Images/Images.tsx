@@ -15,14 +15,14 @@ const photos = [
     height: 2,
   },
   {
-    src: 'https://source.unsplash.com/qDkso9nvCg0/600x799',
+    src: 'https://source.unsplash.com/6ZdrXFHods0/600x799',
     width: 3,
     height: 4,
   },
   {
-    src: 'https://source.unsplash.com/epcsn8Ed8kY/600x799',
-    width: 3,
-    height: 4,
+    src: 'https://source.unsplash.com/QdrfPZJC78k/699x400',
+    width: 5,
+    height: 3,
   },
   {
     src: 'https://source.unsplash.com/-PdP8SYHYIU/800x599',
@@ -37,7 +37,7 @@ const photos = [
   },
 
   {
-    src: 'https://source.unsplash.com/NQSWvyVRIJk/800x599',
+    src: 'https://source.unsplash.com/wKLFiInmCVU/800x599',
     width: 4,
     height: 3,
   },

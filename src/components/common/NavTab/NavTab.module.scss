@@ -1,63 +1,76 @@
-.container, .containerActive {
-    display: flex;
-    flex-direction: column;
-    font-size: 13px;
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 30px;
+.container,
+.containerActive {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 30px;
 }
 
 .containerActive {
-    color: #1a73e8;
-    border-bottom: 3px solid #1a73e8;
+  color: #1a73e8;
+  border-bottom: 3px solid #1a73e8;
 }
 
-.container:hover{
-    color: #1a73e8;
-    cursor: pointer;
-    .icon {
-        filter: invert(38%) sepia(39%) saturate(4268%) hue-rotate(202deg) brightness(92%) contrast(98%);
-    }
+.container:hover {
+  color: #1a73e8;
+  cursor: pointer;
+  .icon {
+    filter: invert(38%) sepia(39%) saturate(4268%) hue-rotate(202deg)
+      brightness(92%) contrast(98%);
+  }
 }
 
 .top {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
-
 .icon {
-    max-width: 16px;
-    display: block;
-    color: #5f6368;
-    padding-right: 6px
+  max-width: 16px;
+  display: block;
+  color: #5f6368;
+  padding-right: 6px;
 }
 
 .link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-.link:hover{
-    text-decoration: none;
+.link:hover {
+  text-decoration: none;
 }
 
-.link:visited{
-    text-decoration: none;
+.link:visited {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 500px) {
-    .container, .containerActive {
-        padding-left: 5px;
-        padding-right: 23px;
-    }
+  .container,
+  .containerActive {
+    padding-left: 5px;
+    padding-right: 23px;
+    font-size: 11px;
+  }
+
+  .icon {
+    max-width: 15px;
+    padding-right: 5px;
+  }
 }
 
+@media only screen and (max-width: 300px) {
+  .container,
+  .containerActive {
+    padding-left: 3px;
+    padding-right: 15px;
+    font-size: 10px;
+  }
 
-
-@media only screen and (max-width: 335px) {
-    .container, .containerActive {
-        padding-left: 3px;
-        padding-right: 20px;
-    }
+  .icon {
+    max-width: 14px;
+    padding-right: 4px;
+  }
 }
