@@ -1,13 +1,23 @@
 const ResultsAray = [
   {
+    title: 'Software Developement Engineer Intern, Amazon',
+    link: 'https://www.amazon.com/',
+    description: `Prototyping performant big data pipelines with S3, Lambdas, Glue ETL, PySpark, and Redshift Spectrum, reduced bucket storage costs by ~90% by migrating json data to parquet format...`,
+  },
+  {
+    title: 'Undergraduate Researcher, University of Toronto',
+    link: 'http://csslab.cs.toronto.edu/',
+    description: `Conducting research around maia, an AlphaZero/Leela-like deep learning framework that learns from human games instead of self-play. Currently conducting turing tests on human games vs maia's games...`,
+  },
+  {
     title: 'Software Developer Intern, Shopify',
-    link: 'https://www.shopify.ca/plus',
-    description: `Haven't done anything yet...`,
+    link: 'https://www.shopify.com/',
+    description: `Leveraged Ruby on Rails, GraphQL, TypeScript and React to build end to end features on Flow, Shopify's ecommerce automation platform. Improved overall performance by implementing cursor based pagination and eliminating various N + 1s...`,
   },
   {
     title: 'Front End Engineer, Retail Rope',
     link: 'https://github.com/noahnu/pos_frontend',
-    description: `Developing a POS application with React, Typescript, and Redux (Ducks Pattern & Saga). Increased inventory search and rendering performance by 400% using virtualization and infinite loading...`,
+    description: `Developed a POS application with React, Typescript, and Redux (Ducks Pattern & Saga). Increased inventory search and rendering performance by 400% using virtualization and infinite loading...`,
   },
   {
     title: 'Software Engineer Intern, IBM',
