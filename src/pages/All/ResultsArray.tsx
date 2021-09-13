@@ -1,6 +1,6 @@
 const ResultsAray = [
   {
-    title: 'Software Developement Engineer Intern, Amazon',
+    title: 'Software Development Engineer Intern, Amazon',
     link: 'https://www.amazon.com/',
     description: `Prototyping performant big data pipelines with S3, Lambdas, Glue ETL, PySpark, and Redshift Spectrum, reduced bucket storage costs by ~90% by migrating json data to parquet format...`,
   },
