@@ -1,0 +1,63 @@
+//
+// LIGHT THEME COLORS
+//
+$light-background: #ffffff;
+
+// Text
+$light-text-high-contrast: #202124;
+$light-text-med-contrast: #5f6368;
+$light-text-low-contrast: #70757a;
+$light-text-body: #4d5156;
+
+// Button
+$light-button-background: #f8f9fa;
+
+// Right Landing Nav
+$light-app-link-text: #000000de;
+
+// Search Bar
+$light-search-bar-border: #dfe1e5;
+$light-search-bar-shadow: #20212447;
+$light-search-bar-hover-background: none;
+
+// Footer
+$light-footer-background: #f2f2f2;
+$light-footer-text: #70757a;
+$light-footer-border: #dadce0;
+
+// Accents
+$light-primary-accent: #1a0dab;
+$light-secondary-accent: #1a73e8;
+$light-low-saturation-accent: #3c4043;
+
+//
+// DARK THEME COLORS
+//
+$dark-background: #202124;
+
+// Text
+$dark-text-high-contrast: #e8eaed;
+$dark-text-med-contrast: #969ba1;
+$dark-text-low-contrast: #9aa0a6;
+$dark-text-body: #bdc1c6;
+
+// Button
+$dark-button-background: #303134;
+
+// Right Landing Nav
+$dark-app-link-text: #ffffff;
+
+// Search Bar
+$dark-search-bar-border: #5f6368;
+$dark-search-bar-shadow: #171717;
+$dark-search-bar-hover-background: $dark-button-background;
+
+// Footer
+$dark-footer-background: #171717;
+$dark-footer-text: #9aa0a6;
+$dark-footer-border: #3c4043;
+
+// Accents
+$dark-primary-accent: #8ab4f8;
+$dark-secondary-accent: #8ab4f8;
+$dark-low-saturation-accent: #e8eaed;

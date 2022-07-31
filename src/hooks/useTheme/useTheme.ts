@@ -1,0 +1,24 @@
+import { useCallback, useMemo } from 'react'
+import { useLocalStorage } from 'src/hooks'
+import { Theme } from 'src/types/theme'
+
+const THEME = 'THEME'
+
+export const useTheme = (): [Theme, VoidFunction] => {
+  const isClient = typeof window !== 'undefined'
+  const defaultTheme = useMemo(() => {
+    return isClient &&
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light'
+  }, [isClient])
+  const [theme, setTheme] = useLocalStorage<Theme>(THEME, defaultTheme)
+
+  const toggleTheme = useCallback(
+    () => setTheme(theme === 'light' ? 'dark' : 'light'),
+    [setTheme, theme]
+  )
+
+  return [theme, toggleTheme]
+}

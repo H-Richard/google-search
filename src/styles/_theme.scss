@@ -1,0 +1,80 @@
+@import './colors';
+
+$themes: (
+  light: (
+    background: $light-background,
+    button-background: $light-button-background,
+    app-link-text: $light-app-link-text,
+    search-bar-border: $light-search-bar-border,
+    search-bar-shadow: $light-search-bar-shadow,
+    search-bar-hover-background: $light-search-bar-hover-background,
+    footer-background: $light-footer-background,
+    footer-text: $light-footer-text,
+    footer-border: $light-footer-border,
+    primary-accent: $light-primary-accent,
+    secondary-accent: $light-secondary-accent,
+    low-saturation-accent: $light-low-saturation-accent,
+    text-high-contrast: $light-text-high-contrast,
+    text-med-contrast: $light-text-med-contrast,
+    text-low-contrast: $light-text-low-contrast,
+    text-body: $light-text-body,
+  ),
+  dark: (
+    background: $dark-background,
+    button-background: $dark-button-background,
+    app-link-text: $dark-app-link-text,
+    search-bar-border: $dark-search-bar-border,
+    search-bar-shadow: $dark-search-bar-shadow,
+    search-bar-hover-background: $dark-search-bar-hover-background,
+    footer-background: $dark-footer-background,
+    footer-text: $dark-footer-text,
+    footer-border: $dark-footer-border,
+    primary-accent: $dark-primary-accent,
+    secondary-accent: $dark-secondary-accent,
+    low-saturation-accent: $dark-low-saturation-accent,
+    text-high-contrast: $dark-text-high-contrast,
+    text-med-contrast: $dark-text-med-contrast,
+    text-low-contrast: $dark-text-low-contrast,
+    text-body: $dark-text-body,
+  ),
+);
+
+@mixin themed-styles() {
+  @each $theme, $map in $themes {
+    :global(.theme-#{$theme}) & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get($map, '#{$key}');
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get($map, '#{$key}');
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed-color($key) {
+  @return map-get($theme-map, $key);
+}
