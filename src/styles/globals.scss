@@ -1,26 +1,66 @@
+@import 'base';
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('/fonts/ProductSans-Regular.ttf') format('trueType');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('/fonts/ProductSans-Medium.ttf') format('trueType');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('/fonts/ProductSans-Thin.ttf') format('trueType');
+  font-weight: 300;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+body {
+  & > div,
+  & > div > div,
+  & > div > div > div {
+    height: inherit;
+  }
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 a {
   color: inherit;
   text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 * {
   box-sizing: border-box;
+  transition: all 200ms ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+.root {
+  display: flex;
+
+  @include themed-styles {
+    background-color: themed-color(background);
+    color: themed-color(text-body);
   }
 }

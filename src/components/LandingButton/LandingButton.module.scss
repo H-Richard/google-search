@@ -1,0 +1,24 @@
+@import '/src/styles/base';
+
+.button {
+  transition: 50ms ease-in-out;
+  @include themed-styles {
+    background-color: themed-color(button-background);
+    border: 1px solid themed-color(button-background);
+    color: themed-color(low-saturation-accent);
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border: 1px solid rgba(themed-color('low-saturation-accent'), 0.4);
+    }
+  }
+
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  min-width: 54px;
+  cursor: pointer;
+}

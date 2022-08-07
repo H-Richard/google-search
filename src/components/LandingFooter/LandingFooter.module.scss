@@ -1,0 +1,48 @@
+@import '/src/styles/base';
+
+.row {
+  @include row;
+  justify-content: space-between;
+
+  padding: 14px;
+  @include themed-styles {
+    border-bottom: 1px solid themed-color(footer-border);
+  }
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include mobile {
+    justify-content: center;
+
+    span {
+      padding: 2px;
+      font-size: 14px;
+    }
+  }
+}
+
+.content {
+  gap: 25px;
+  display: flex;
+}
+
+.bottom {
+  @include mobile {
+    .content {
+      display: none;
+      height: 20px;
+    }
+  }
+}
+
+.container {
+  @include col;
+  font-size: 15px;
+  align-self: stretch;
+
+  @include themed-styles {
+    background-color: themed-color(footer-background);
+    color: themed-color(footer-text);
+  }
+}

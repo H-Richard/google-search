@@ -1,0 +1,23 @@
+@import '/src/styles/base';
+
+.container {
+  @include container;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  @include row;
+  justify-content: center;
+  margin-top: 5px;
+
+  button {
+    margin: 7px;
+  }
+}
+
+.landing {
+  @include col;
+  gap: 15px;
+  margin-top: -18%;
+}

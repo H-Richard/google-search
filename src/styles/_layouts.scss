@@ -1,0 +1,22 @@
+$desktop-width: 1000px;
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin container {
+  @include col;
+  flex: 1;
+}
+
+@mixin mobile {
+  @media (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
