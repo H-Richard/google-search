@@ -57,7 +57,7 @@ a {
 }
 
 .root {
-  display: flex;
+  @include col;
 
   @include themed-styles {
     background-color: themed-color(background);

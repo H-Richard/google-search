@@ -1,7 +1,7 @@
-import { ThemeButton } from 'src/components'
+import { AuthenticateButton, ThemeButton } from 'src/components'
 import styles from './LandingHeader.module.scss'
 
-const Menu: React.FC = () => (
+export const menu = (
   <svg
     focusable="false"
     xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@ const Menu: React.FC = () => (
   </svg>
 )
 
-const Dots: React.FC = () => (
+export const dots = (
   <div className={styles.dots}>
     <svg
       focusable="false"
@@ -32,7 +32,7 @@ export const LandingHeader: React.FC = () => {
   return (
     <div className={styles.header}>
       <div className={styles.links}>
-        <Menu />
+        {menu}
         <p className={styles.tab}>ALL</p>
         <p className={styles.tab}>IMAGES</p>
         <p className={styles.redirect}>About</p>
@@ -42,8 +42,8 @@ export const LandingHeader: React.FC = () => {
         <ThemeButton />
         <p className={styles.app}>Gmail</p>
         <p className={styles.app}>Images</p>
-        <Dots />
-        <button className={styles.button}>Sign in</button>
+        {dots}
+        <AuthenticateButton>Sign in</AuthenticateButton>
       </div>
     </div>
   )

@@ -4,12 +4,14 @@ import { LegacyRef, useRef, useCallback, useEffect, useState } from 'react'
 
 import {
   Compose,
+  Footer,
+  Header,
   LandingButton,
   LandingFooter,
   LandingHeader,
-  LandingSearchBar,
   Logo,
 } from 'src/components'
+import { SearchBar } from 'src/components/SearchBar'
 import { ThemeContextProvider } from 'src/contexts'
 import { useSearchText } from 'src/hooks/useSearchText'
 
@@ -46,8 +48,10 @@ const Landing: React.FC<LandingProps> = ({
     <div className={styles.container}>
       <LandingHeader />
       <div className={styles.landing}>
-        <Logo />
-        <LandingSearchBar searchRef={searchRef} searchText={searchText} />
+        <div className={styles.logo}>
+          <Logo />
+        </div>
+        <SearchBar searchRef={searchRef} searchText={searchText} landing />
         <div className={styles.buttons}>
           <LandingButton onClick={onSearchClick} buttonRef={buttonRef}>
             Google Search
@@ -93,7 +97,11 @@ function GoogleSearch({ Component, pageProps }: AppProps) {
             onSearchClick={onSearchClick}
           />
         ) : (
-          <Component {...pageProps} />
+          <>
+            <Header />
+            <Component {...pageProps} />
+            <Footer />
+          </>
         )}
       </div>
     </Compose>

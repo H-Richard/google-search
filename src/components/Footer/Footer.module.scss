@@ -1,0 +1,27 @@
+@import '/src/styles/base';
+
+.container {
+  padding: 6px;
+  font-size: 11px;
+  font-family: 'Product Sans', sans-serif;
+  @include row;
+  justify-content: center;
+
+  @include themed-styles {
+    background-color: themed-color(background-contrast);
+
+    a {
+      color: themed-color(secondary-accent);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  & > div {
+    text-align: center;
+    width: 90vw;
+    max-width: 600px;
+  }
+}

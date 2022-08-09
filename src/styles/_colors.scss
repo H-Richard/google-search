@@ -2,6 +2,7 @@
 // LIGHT THEME COLORS
 //
 $light-background: #ffffff;
+$light-background-contrast: #f1f3f4;
 
 // Text
 $light-text-high-contrast: #202124;
@@ -20,6 +21,8 @@ $light-dots: #5f6368;
 $light-search-bar-border: #dfe1e5;
 $light-search-bar-shadow: #20212447;
 $light-search-bar-hover-background: none;
+$light-search-bar-mobile-voice: #70757a;
+$light-search-bar-clear: #70757a;
 
 // Footer
 $light-footer-background: #f2f2f2;
@@ -35,6 +38,7 @@ $light-low-saturation-accent: #3c4043;
 // DARK THEME COLORS
 //
 $dark-background: #202124;
+$dark-background-contrast: #171717;
 
 // Text
 $dark-text-high-contrast: #e8eaed;
@@ -53,6 +57,8 @@ $dark-dots: #ffffffde;
 $dark-search-bar-border: #5f6368;
 $dark-search-bar-shadow: #171717;
 $dark-search-bar-hover-background: $dark-button-background;
+$dark-search-bar-mobile-voice: #80868b;
+$dark-search-bar-clear: #757b80;
 
 // Footer
 $dark-footer-background: #171717;

@@ -1,0 +1,27 @@
+@import '/src/styles/base';
+
+.button {
+  font-family: 'Product Sans', sans-serif;
+  font-weight: 400;
+  padding: 9px 23px;
+  font-size: 14px;
+  margin: 0 8px;
+  border-radius: 4px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  min-width: 96px;
+  height: 36px;
+  outline: none;
+  border: none;
+
+  @include themed-styles {
+    background-color: themed-color(secondary-accent);
+    color: themed-color(background);
+  }
+
+  @include mobile {
+    height: 32px;
+    min-width: 60px;
+    padding: 4px 12px;
+  }
+}

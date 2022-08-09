@@ -1,0 +1,127 @@
+@import '/src/styles/base';
+
+:global(.theme-light) .container.nonempty {
+  box-shadow: 0px 1px 6px #403c4329;
+}
+
+:global(.theme-dark) .container.nonempty {
+  border-color: transparent;
+}
+
+.container {
+  @include row;
+
+  width: 584px;
+  height: 44px;
+  border-radius: 24px;
+  padding: 0px 14px;
+
+  align-items: center;
+
+  input {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex: 1;
+    height: 34px;
+    font-size: 16px;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include themed-styles {
+      caret-color: themed-color(text-high-contrast);
+      color: themed-color(text-high-contrast);
+    }
+  }
+
+  @include themed-styles {
+    border: 1px solid themed-color(search-bar-border);
+    color: themed-color(low-saturation-accent);
+
+    &:hover,
+    &:focus-within {
+      box-shadow: 0 1px 6px themed-color(search-bar-shadow);
+      background-color: themed-color(search-bar-hover-background);
+    }
+
+    &.nonempty {
+      background-color: themed-color(search-bar-hover-background);
+    }
+  }
+
+  @include mobile {
+    width: 90vw;
+    max-width: 720px;
+  }
+}
+
+.input {
+  display: flex;
+  flex: 1;
+  margin: 0px 13px;
+}
+
+.voice {
+  @include mobile {
+    @include themed-styles {
+      path {
+        fill: themed-color(search-bar-mobile-voice);
+      }
+    }
+  }
+}
+
+.search {
+  @include themed-styles {
+    path {
+      fill: themed-color(text-low-contrast);
+    }
+  }
+}
+
+.clear {
+  @include themed-styles {
+    path {
+      fill: themed-color(search-bar-clear);
+    }
+  }
+}
+
+.complex {
+  width: 538px;
+  @media (min-width: 1300px) {
+    width: 690px;
+  }
+
+  .clear {
+    margin: 12px;
+  }
+
+  .voice {
+    margin: 8px;
+  }
+
+  .search {
+    margin-left: 2px;
+    height: 24px;
+    width: 24px;
+    @include themed-styles {
+      path {
+        fill: themed-color(secondary-accent);
+      }
+    }
+  }
+
+  span {
+    height: 28.49px;
+    @include themed-styles {
+      border-right: 1px solid themed-color(search-bar-border);
+    }
+  }
+
+  input {
+    margin-left: 4px;
+  }
+}
