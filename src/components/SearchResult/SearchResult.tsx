@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { SearchLink } from '../SearchLink'
 
 import styles from './SearchResult.module.scss'
 
@@ -13,20 +14,6 @@ const about = (
     <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
   </svg>
 )
-
-export const linkify = (link: string) => {
-  const url = new URL(link)
-  const paths = url.pathname.split('/').filter((el) => el)
-
-  return (
-    <>
-      {url.origin}{' '}
-      {paths.map((path) => (
-        <span key={`${url.origin}-${path}`}> › {path}</span>
-      ))}
-    </>
-  )
-}
 
 interface Props {
   link: string
@@ -58,7 +45,7 @@ export const SearchResult: React.FC<Props> = ({
                   priority
                 />
               </div>
-              <p>{linkify(link)}</p>
+              <SearchLink link={link} protocol />
               {about}
             </div>
             <h3 className={styles.title}>{title}</h3>

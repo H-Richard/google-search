@@ -8,6 +8,7 @@ const nextConfig = {
       'avatars.githubusercontent.com',
       'source.unsplash.com',
       'images.unsplash.com',
+      'i1.ytimg.com',
     ],
   },
 }

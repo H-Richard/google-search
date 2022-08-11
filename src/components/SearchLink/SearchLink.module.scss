@@ -1,0 +1,19 @@
+@import '/src/styles/base';
+
+.link {
+  span {
+    font-size: 14px;
+
+    p {
+      margin: 0;
+    }
+
+    @include themed-styles {
+      color: themed-color(text-med-contrast);
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}

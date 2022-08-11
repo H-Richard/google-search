@@ -1,1 +1,29 @@
 @import '/src/styles/base';
+
+.container {
+  @include col;
+  @include pad-left;
+  margin-left: 10px;
+  flex: 1;
+
+  @include mobile {
+    margin: 0;
+  }
+}
+
+.results {
+  width: 652px;
+  @include col;
+
+  @include mobile {
+    width: 100%;
+    gap: 0px;
+  }
+
+  gap: 30px;
+  margin-bottom: 40px;
+
+  @include mobile {
+    margin-bottom: 0;
+  }
+}

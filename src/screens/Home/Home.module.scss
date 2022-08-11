@@ -17,6 +17,7 @@
 
 .results {
   width: 652px;
+  margin-bottom: 40px;
 
   & > :first-child {
     display: none;
@@ -32,6 +33,7 @@
     @include themed-styles {
       background-color: themed-color(background-contrast);
     }
+    margin-bottom: 0;
   }
 }
 
