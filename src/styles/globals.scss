@@ -1,5 +1,7 @@
 @import 'base';
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 @font-face {
   font-family: 'Product Sans';
   src: url('/fonts/ProductSans-Regular.ttf') format('trueType');
@@ -58,6 +60,8 @@ a {
 
 .root {
   @include col;
+  flex: 1;
+  overflow: scroll;
 
   @include themed-styles {
     background-color: themed-color(background);

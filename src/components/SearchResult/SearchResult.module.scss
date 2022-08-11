@@ -1,0 +1,142 @@
+@import '/src/styles/base';
+
+.container {
+  font-family: Roboto, arial, sans-serif;
+  @include row;
+  gap: 5px;
+  margin-bottom: 30px;
+
+  @include mobile {
+    margin-bottom: 8px;
+    padding: 12px 16px;
+    @include themed-styles {
+      background-color: themed-color(background);
+      outline: 1px solid themed-color(result-border);
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  & > .image {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.content {
+  @include col;
+  flex: 1;
+}
+
+.image {
+  position: relative;
+  height: 92px;
+  width: 92px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+:global(.theme-light) .link {
+  color: $light-text-high-contrast;
+}
+
+:global(.theme-dark) .link {
+  color: $dark-text-body;
+}
+
+.link {
+  @include row;
+  align-items: center;
+  font-size: 14px;
+  padding: 1px 0px 0px;
+
+  span {
+    @include themed-styles {
+      color: themed-color(text-med-contrast);
+    }
+  }
+
+  svg {
+    margin-left: 12px;
+
+    @include mobile {
+      margin-left: auto;
+    }
+  }
+
+  path {
+    @include themed-styles {
+      fill: themed-color(text-low-contrast);
+    }
+  }
+
+  @include mobile {
+    font-size: 12px;
+    flex: 1;
+  }
+}
+
+.title {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 5px;
+  padding-bottom: 3px;
+  font-weight: 400;
+
+  @include themed-styles {
+    color: themed-color(primary-accent);
+  }
+}
+
+.description {
+  font-size: 14px;
+  line-height: 22.12px;
+}
+
+.extras {
+  font-size: 14px;
+}
+
+.hover:hover {
+  cursor: pointer;
+
+  .title {
+    text-decoration: underline;
+  }
+}
+
+.hover {
+  @include col;
+}
+
+.preview {
+  display: flex;
+  gap: 5px;
+
+  & > .image {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+  }
+}
+
+.text {
+  @include col;
+  flex: 1;
+}
+
+.favicon {
+  display: none;
+  margin-right: 12px;
+  height: 16px;
+
+  @include mobile {
+    display: block;
+  }
+}

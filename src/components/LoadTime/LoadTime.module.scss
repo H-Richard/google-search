@@ -1,0 +1,17 @@
+@import '/src/styles/base';
+
+.p {
+  @include row;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'Product Sans', sans-serif;
+  height: 43px;
+  margin: 0px;
+  @include themed-styles {
+    color: themed-color(text-low-contrast);
+  }
+
+  @include mobile {
+    display: none;
+  }
+}

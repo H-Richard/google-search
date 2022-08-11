@@ -1,0 +1,55 @@
+@import '/src/styles/base';
+
+.container {
+  @include col;
+  width: 72px;
+  align-items: center;
+
+  p {
+    margin: 0;
+  }
+
+  gap: 8px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include mobile {
+    width: 96px;
+    gap: 0px;
+    border-radius: 8px;
+    @include themed-styles {
+      border: 1px solid themed-color(footer-border) !important;
+    }
+
+    .image {
+      height: 96px;
+      width: 96px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .text {
+      margin: 7px 8px 9px;
+    }
+  }
+}
+
+.image {
+  position: relative;
+  display: block;
+  width: 78px;
+  height: 78px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.label {
+  margin-top: 2px !important;
+  font-size: 12px;
+
+  @include themed-styles {
+    color: themed-color(text-low-contrast);
+  }
+}

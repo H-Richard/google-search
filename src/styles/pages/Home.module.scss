@@ -1,7 +1,145 @@
 @import '/src/styles/base';
 
 .container {
-  display: flex;
+  @include col;
+  @include pad-left;
+  margin-left: 10px;
   flex: 1;
-  height: auto;
+
+  @include mobile {
+    margin: 0;
+  }
+}
+
+.content {
+  @include row;
+}
+
+.results {
+  width: 652px;
+
+  & > :first-child {
+    display: none;
+  }
+
+  @include mobile {
+    width: 100%;
+
+    & > :first-child {
+      display: flex;
+    }
+
+    @include themed-styles {
+      background-color: themed-color(background-contrast);
+    }
+  }
+}
+
+.header {
+  @include row;
+
+  height: 58px;
+  margin: 2px 0px 31px;
+  padding-top: 8px;
+  margin-bottom: 40px;
+  position: relative;
+
+  @include mobile {
+    padding: 8px 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.title {
+  @include row;
+  height: 58px;
+
+  gap: 19px;
+}
+
+.headshot {
+  border-radius: 8px;
+  overflow: hidden;
+  @include mobile {
+    display: none;
+  }
+}
+
+.name {
+  svg {
+    width: 16px;
+    height: 16px;
+    @include themed-styles {
+      path {
+        fill: themed-color(text-high-contrast);
+      }
+    }
+
+    @include mobile {
+      position: absolute;
+      right: 16px;
+      top: 20px;
+    }
+  }
+
+  h2,
+  p {
+    margin: 0px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 400;
+
+    @include themed-styles {
+      color: themed-color(text-high-contrast);
+    }
+
+    .about {
+      display: none;
+      @include mobile {
+        display: initial;
+      }
+    }
+  }
+
+  p {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    line-height: 24px;
+    gap: 6px;
+
+    .about {
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+.divider {
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: 0;
+  margin-top: 70px;
+  max-width: 1035px;
+
+  @include themed-styles {
+    background-color: themed-color(footer-border);
+  }
+
+  @media (min-width: 1300px) {
+    max-width: 1065px;
+  }
+}
+
+.info {
+  @include mobile {
+    display: none;
+  }
 }

@@ -1,0 +1,192 @@
+@import '/src/styles/base';
+
+@mixin padded {
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+  @include mobile {
+    padding: 0;
+  }
+}
+
+.container {
+  font-family: Roboto, arial, sans-serif;
+  font-size: 14px;
+  @include col;
+  width: 357px;
+  margin-left: 30px;
+
+  @media (min-width: 1300px) {
+    margin-left: 60px;
+  }
+
+  @include themed-styles {
+    border-left: 1px solid themed-color(footer-border);
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 24px;
+
+    font-weight: 400;
+
+    margin: 0;
+
+    margin-bottom: 8px;
+    @include themed-styles {
+      color: themed-color(text-high-contrast);
+    }
+
+    @include mobile {
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+
+  & > div {
+    @include padded;
+  }
+
+  @include mobile {
+    flex: 1;
+    width: auto;
+    margin: 0;
+    @include themed-styles {
+      background-color: themed-color(background);
+      border-left: none;
+    }
+  }
+}
+
+.about {
+  @include mobile {
+    & > h4 {
+      display: none;
+    }
+  }
+}
+
+.border {
+  margin-top: 20px;
+  @include themed-styles {
+    border-bottom: 1px solid themed-color(footer-border);
+  }
+}
+
+.website {
+  margin-bottom: 16px;
+  height: 32px;
+  border-radius: 16px;
+  padding: 3px 12px;
+  font-family: Roboto, sans-serif;
+  gap: 8px;
+
+  display: inline-flex;
+  align-items: center;
+  transition: 50ms;
+
+  @include themed-styles {
+    border: 1px solid themed-color(footer-border);
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      background-color: themed-color(button-background);
+    }
+
+    @include mobile {
+      margin: 0;
+      padding: 12px 16px;
+      gap: 20px;
+      border-radius: 0px;
+      height: auto;
+      border: none;
+      @include row;
+      width: auto;
+      flex: 1;
+
+      svg {
+        path {
+          fill: themed-color(text-low-contrast);
+        }
+      }
+
+      border-bottom: 1px solid themed-color(footer-border);
+    }
+  }
+}
+
+.globe {
+  path {
+    fill: #4487f6;
+  }
+
+  width: 20px;
+  height: 20px;
+}
+
+.description {
+  line-height: 22.12px;
+  font-family: Roboto, arial, sans-serif;
+  margin: 0;
+
+  @include mobile {
+    padding: 12px 16px 0px;
+  }
+}
+
+.stat {
+  margin-top: 12px;
+
+  span {
+    font-weight: 600;
+    @include themed-styles {
+      color: themed-color(text-high-contrast);
+    }
+  }
+
+  a {
+    @include themed-styles {
+      color: themed-color(primary-accent);
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include mobile {
+    padding: 0px 16px;
+  }
+}
+
+.profiles {
+  @include mobile {
+    padding: 12px 16px !important;
+
+    .border {
+      display: none;
+    }
+  }
+}
+
+.socials {
+  @include row;
+  justify-content: space-between;
+  margin-top: 12px;
+
+  @include mobile {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
+
+.people {
+  @include mobile {
+    padding: 12px 16px !important;
+
+    .socials {
+      gap: 10px;
+      overflow-x: scroll;
+    }
+  }
+}

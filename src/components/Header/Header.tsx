@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
         <div className={styles.logo}>
           <Logo height={30} width={92} />
         </div>
-        <SearchBar searchText="Richard" />
+        <SearchBar searchText="Richard Hong" />
         <div className={styles.control}>
           <ThemeButton />
           {dots}

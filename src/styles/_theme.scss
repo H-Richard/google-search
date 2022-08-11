@@ -22,6 +22,7 @@ $themes: (
     text-med-contrast: $light-text-med-contrast,
     text-low-contrast: $light-text-low-contrast,
     text-body: $light-text-body,
+    result-border: $light-result-border,
   ),
   dark: (
     background: $dark-background,
@@ -44,6 +45,7 @@ $themes: (
     text-med-contrast: $dark-text-med-contrast,
     text-low-contrast: $dark-text-low-contrast,
     text-body: $dark-text-body,
+    result-border: $dark-result-border,
   ),
 );
 

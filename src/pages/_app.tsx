@@ -2,15 +2,7 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { LegacyRef, useRef, useCallback, useEffect, useState } from 'react'
 
-import {
-  Compose,
-  Footer,
-  Header,
-  LandingButton,
-  LandingFooter,
-  LandingHeader,
-  Logo,
-} from 'src/components'
+import { Compose, Footer, Header, LandingButton, LandingFooter, LandingHeader, Logo } from 'src/components'
 import { SearchBar } from 'src/components/SearchBar'
 import { ThemeContextProvider } from 'src/contexts'
 import { useSearchText } from 'src/hooks/useSearchText'
@@ -26,11 +18,7 @@ interface LandingProps {
   onSearchClick: VoidFunction
 }
 
-const Landing: React.FC<LandingProps> = ({
-  searchText,
-  searchRef,
-  onSearchClick,
-}: LandingProps) => {
+const Landing: React.FC<LandingProps> = ({ searchText, searchRef, onSearchClick }: LandingProps) => {
   const buttonRef = useRef<HTMLButtonElement>(null)
 
   const search = useCallback(async () => {
@@ -91,11 +79,7 @@ function GoogleSearch({ Component, pageProps }: AppProps) {
       </Head>
       <div className="root">
         {landing ? (
-          <Landing
-            searchText={searchText}
-            searchRef={searchRef}
-            onSearchClick={onSearchClick}
-          />
+          <Landing searchText={searchText} searchRef={searchRef} onSearchClick={onSearchClick} />
         ) : (
           <>
             <Header />

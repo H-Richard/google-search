@@ -125,3 +125,17 @@
     margin-left: 4px;
   }
 }
+
+.mobile {
+  display: none;
+
+  @include mobile {
+    display: flex;
+  }
+}
+
+.desktop {
+  @include mobile {
+    display: none;
+  }
+}
