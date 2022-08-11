@@ -1,0 +1,44 @@
+@import '/src/styles/base';
+
+.container {
+  column-count: 3;
+  column-gap: 20px;
+  height: auto;
+  margin: 20px;
+
+  @include mobile {
+    column-count: 2;
+  }
+
+  @media (max-width: 500px) {
+    column-count: 1;
+    margin: 5px;
+    margin-top: 0px;
+  }
+}
+
+.image {
+  * {
+    height: auto !important;
+    min-height: none !important;
+    margin: 0px !important;
+  }
+
+  img {
+    position: relative !important;
+  }
+
+  span {
+    padding: 0px !important;
+  }
+
+  margin-bottom: 20px;
+  @media (max-width: 500px) {
+    margin-bottom: 5px;
+  }
+  position: relative;
+}
+
+.block {
+  width: 100%;
+}
