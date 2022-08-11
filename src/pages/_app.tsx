@@ -1,56 +1,15 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { LegacyRef, useRef, useCallback, useEffect, useState } from 'react'
+import { useRef, useCallback, useEffect, useState } from 'react'
 
-import { Compose, Footer, Header, LandingButton, LandingFooter, LandingHeader, Logo } from 'src/components'
-import { SearchBar } from 'src/components/SearchBar'
+import { Compose, Footer, Header } from 'src/components'
 import { ThemeContextProvider } from 'src/contexts'
 import { useSearchText } from 'src/hooks/useSearchText'
 
 import 'src/styles/globals.scss'
 
-import styles from 'src/styles/pages/App.module.scss'
 import { sleep } from 'src/utils'
-
-interface LandingProps {
-  searchText: string
-  searchRef: LegacyRef<HTMLInputElement>
-  onSearchClick: VoidFunction
-}
-
-const Landing: React.FC<LandingProps> = ({ searchText, searchRef, onSearchClick }: LandingProps) => {
-  const buttonRef = useRef<HTMLButtonElement>(null)
-
-  const search = useCallback(async () => {
-    await sleep(300)
-    buttonRef.current?.focus()
-    await sleep(400)
-    buttonRef.current?.click()
-  }, [])
-
-  useEffect(() => {
-    if (searchText === 'Richard Hong') search()
-  }, [search, searchText])
-
-  return (
-    <div className={styles.container}>
-      <LandingHeader />
-      <div className={styles.landing}>
-        <div className={styles.logo}>
-          <Logo />
-        </div>
-        <SearchBar searchRef={searchRef} searchText={searchText} landing />
-        <div className={styles.buttons}>
-          <LandingButton onClick={onSearchClick} buttonRef={buttonRef}>
-            Google Search
-          </LandingButton>
-          <LandingButton>I&apos;m Feeling Lucky</LandingButton>
-        </div>
-      </div>
-      <LandingFooter />
-    </div>
-  )
-}
+import { Landing } from 'src/screens'
 
 function GoogleSearch({ Component, pageProps }: AppProps) {
   const [landing, setLanding] = useState(true)
@@ -79,7 +38,11 @@ function GoogleSearch({ Component, pageProps }: AppProps) {
       </Head>
       <div className="root">
         {landing ? (
-          <Landing searchText={searchText} searchRef={searchRef} onSearchClick={onSearchClick} />
+          <Landing
+            searchText={searchText}
+            searchRef={searchRef}
+            onSearchClick={onSearchClick}
+          />
         ) : (
           <>
             <Header />

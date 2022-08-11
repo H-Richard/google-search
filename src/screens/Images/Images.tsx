@@ -2,9 +2,9 @@ import { NextPage } from 'next'
 import Image from 'next/image'
 import { images } from 'src/content'
 
-import styles from 'src/styles/pages/Images.module.scss'
+import styles from './Images.module.scss'
 
-const Images: NextPage = () => {
+export const Images: NextPage = () => {
   return (
     <div className={styles.container}>
       {images.map((id) => (
@@ -31,5 +31,3 @@ const Images: NextPage = () => {
     </div>
   )
 }
-
-export default Images

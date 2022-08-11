@@ -1,6 +1,13 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { image, imageActive, search, searchActive } from './icons'
+import {
+  image,
+  imageActive,
+  search,
+  searchActive,
+  video,
+  videoActive,
+} from './icons'
 import {
   AuthenticateButton,
   Logo,
@@ -19,6 +26,12 @@ const routes = [
     route: '/',
     icon: search,
     activeIcon: searchActive,
+  },
+  {
+    label: 'Videos',
+    route: '/videos',
+    icon: video,
+    activeIcon: videoActive,
   },
   {
     label: 'Images',
