@@ -1,0 +1,31 @@
+@import '/src/styles/base';
+
+.container {
+  @include row;
+  flex: 1;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  position: relative;
+}
+
+.content {
+  font-family: Product Sans, sans-serif;
+  margin-top: -10%;
+  z-index: 1;
+  @include themed-styles {
+    color: themed-color(text-high-contrast);
+  }
+}
+
+.image {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  min-height: 100%;
+
+  overflow: hidden;
+  opacity: 0.2;
+}

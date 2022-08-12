@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import {
+  book,
+  bookActive,
+  finance,
+  financeActive,
   image,
   imageActive,
   search,
@@ -38,6 +42,18 @@ const routes = [
     route: '/images',
     icon: image,
     activeIcon: imageActive,
+  },
+  {
+    label: 'Skills',
+    route: '/skills',
+    icon: finance,
+    activeIcon: financeActive,
+  },
+  {
+    label: 'Projects',
+    route: '/projects',
+    icon: book,
+    activeIcon: bookActive,
   },
 ]
 

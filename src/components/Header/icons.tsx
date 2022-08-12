@@ -132,3 +132,24 @@ export const book = (
     <path d="M18 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0 18H6V4h2v8l2.5-1.5L13 12V4h5v16z"></path>
   </svg>
 )
+
+export const financeActive = (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path fill="none" d="M0 0h24v24H0V0z" />
+    <g fillRule="evenodd" clipRule="evenodd">
+      <path fill="#EA4335" d="M6 15.5l-3 2.94V10h3v5.5z" />
+      <path fill="#FBBC04" d="M11 13.66l-1.57-1.34L8 13.64V6h3v7.66z" />
+      <path fill="#34A853" d="M16 12l-3 3V2h3v10z" />
+      <path
+        fill="#4285F4"
+        d="M18.81 11.81L17 10h5v5l-1.79-1.79L13 20.36l-3.47-3.02L5.75 21H3l6.47-6.34L13 17.64l5.81-5.83z"
+      />
+    </g>
+  </svg>
+)
+
+export const finance = (
+  <svg focusable="false" viewBox="0 0 24 24" fill="#5f6368">
+    <path d="M6 15.5l-3 2.94V10h3v5.5zm5-1.84l-1.57-1.34L8 13.64V6h3v7.66zM16 12l-3 3V2h3v10zm2.81-.19L17 10h5v5l-1.79-1.79L13 20.36l-3.47-3.02L5.75 21H3l6.47-6.34L13 17.64l5.81-5.83"></path>
+  </svg>
+)
