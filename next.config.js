@@ -10,6 +10,7 @@ const nextConfig = {
       'images.unsplash.com',
       'i1.ytimg.com',
     ],
+    minimumCacheTTL: 86400,
   },
 }
 

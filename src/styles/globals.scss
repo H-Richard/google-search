@@ -6,6 +6,7 @@
   font-family: 'Product Sans';
   src: url('/fonts/ProductSans-Regular.ttf') format('trueType');
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
   src: url('/fonts/ProductSans-Medium.ttf') format('trueType');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
   src: url('/fonts/ProductSans-Thin.ttf') format('trueType');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 html,

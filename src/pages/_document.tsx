@@ -4,7 +4,34 @@ import { Home, Images, Videos } from 'src/screens'
 export default function Document() {
   return (
     <Html>
-      <Head />
+      <Head>
+        <link
+          rel="preload"
+          href="/fonts/ProductSans-Regular.ttf"
+          as="font"
+          crossOrigin=""
+          type="font/ttf"
+        />
+        <link
+          rel="preload"
+          href="/fonts/ProductSans-Medium.ttf"
+          as="font"
+          crossOrigin=""
+          type="font/ttf"
+        />
+        <link
+          rel="preload"
+          href="/fonts/ProductSans-Thin.ttf"
+          as="font"
+          crossOrigin=""
+          type="font/ttf"
+        />
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+          as="style"
+        />
+      </Head>
       <body>
         <Main />
         <NextScript />
