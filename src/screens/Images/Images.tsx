@@ -17,7 +17,7 @@ export const Images: NextPage = () => {
             <div className={styles.image}>
               <Image
                 src={`https://source.unsplash.com/${id}`}
-                alt="Test"
+                alt="photography image"
                 layout="responsive"
                 objectFit="contain"
                 width={0}
