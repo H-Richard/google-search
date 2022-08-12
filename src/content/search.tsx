@@ -4,10 +4,12 @@ import { SearchResult } from 'src/components'
 
 type Content = ComponentProps<typeof SearchResult>
 
+//
+
 export const searchResults: Content[] = [
   {
     title: 'Meta | Software Engineer',
-    descripiption: <></>,
+    descripiption: <>Haven&apos;t done much yet, but its honest work.</>,
     link: 'https://engineering.fb.com/',
     image: (
       <Image
@@ -20,13 +22,44 @@ export const searchResults: Content[] = [
     ),
   },
   {
+    title: 'Augmentr | Engineering Lead',
+    descripiption: (
+      <>
+        Working with NestJS, Prisma, Postgres, AWS S3, CDK, EKS, Kubernetes,
+        GraphQL, and TypeScript.
+      </>
+    ),
+    extras: <b>Infra, Backend, DevOps</b>,
+    link: 'https://www.augmentr.io/',
+    image: (
+      <Image
+        src="https://avatars.githubusercontent.com/u/107826199?s=200&v=4"
+        alt="augmentr logo"
+        layout="fill"
+        objectFit="contain"
+        priority
+      />
+    ),
+  },
+  {
     title: 'Coinbase | Software Engineer',
-    descripiption: <></>,
+    descripiption: (
+      <>
+        Worked with React Native, TypeScript, Go, gRPC, and GraphQL. Was laid
+        off after the company discovered that he stole 3 cans LaCroix&trade;
+        Sparkling Water during a company offsite in Zimbabwe.
+      </>
+    ),
+    extras: (
+      <>
+        <b>Mobile, Frontend, Backend</b>
+      </>
+    ),
     link: 'https://www.coinbase.com/card/',
     image: (
       <Image
         src="https://avatars.githubusercontent.com/u/1885080?s=200&v=4"
-        alt="amazon logo"
+        alt="coinbase logo"
         layout="fill"
         objectFit="contain"
         priority
@@ -35,7 +68,19 @@ export const searchResults: Content[] = [
   },
   {
     title: 'University of Toronto | Researcher',
-    descripiption: <></>,
+    descripiption: (
+      <>
+        Bridging the gap between human and AI with Maia, a human-like chess
+        engine built atop AlphaZero/Leela. Leveraged advanced Reinforcement
+        Learning algorithms to trade crypto and lost all of his money due to a
+        rounding error.
+      </>
+    ),
+    extras: (
+      <>
+        <b>Machine Learning, Frontend</b>
+      </>
+    ),
     link: 'http://csslab.cs.toronto.edu/research/',
     image: (
       <Image
@@ -49,7 +94,17 @@ export const searchResults: Content[] = [
   },
   {
     title: 'Shopify | Software Developer Intern',
-    descripiption: <></>,
+    descripiption: (
+      <>
+        Worked with Ruby on Rails, React, TypeScript, MySQL, and GraphQL. Took a
+        lot of snacks (n &gt;= 20) from the office once and nobody found out.
+      </>
+    ),
+    extras: (
+      <>
+        <b>Frontend, Backend</b>
+      </>
+    ),
     link: 'https://www.shopify.com/plus/solutions/ecommerce-automation/',
     image: (
       <Image
@@ -63,7 +118,13 @@ export const searchResults: Content[] = [
   },
   {
     title: 'University of Toronto | Teaching Assistant',
-    descripiption: <></>,
+    descripiption: (
+      <>
+        TA&apos;d Computability and Computational Complexity, Discrete Math,
+        Linear Algebra II, and Calculus I.
+      </>
+    ),
+    extras: <b>Computer Science, Math</b>,
     link: 'https://web.cs.toronto.edu/',
     image: (
       <Image
@@ -77,7 +138,19 @@ export const searchResults: Content[] = [
   },
   {
     title: 'Amazon | Software Development Engineer Intern',
-    descripiption: <></>,
+    descripiption: (
+      <>
+        Worked with AWS CDK, SageMaker, S3, DynamoDB, PrestoDB, Glue, Redshift,
+        Athena, Lambda, Express, Lambda, PySpark, React and TypeScript. Built
+        scalable data pipelines that ingest terabytes of data daily from the
+        Commerce supply chain.
+      </>
+    ),
+    extras: (
+      <>
+        <b>Data, Infra, DevOps, Frontend, Backend</b>
+      </>
+    ),
     link: 'https://www.amazon.com/',
     image: (
       <Image
@@ -91,12 +164,34 @@ export const searchResults: Content[] = [
   },
   {
     title: 'NorthBoys | Software Engineer',
-    descripiption: <></>,
+    descripiption: (
+      <>
+        Worked with React, TypeScript, and Redux. Built a performant point of
+        sale application used by the physical retailers of the business.
+      </>
+    ),
+    extras: (
+      <>
+        <b>Frontend</b>
+      </>
+    ),
     link: 'https://northboysusa.com/',
   },
   {
     title: 'IBM | Software Engineer Intern',
-    descripiption: <></>,
+    descripiption: (
+      <>
+        Worked with Elixir, Ruby, Python, Go, JavaScript, Kubernetes, Helm,
+        Docker, AWS S3, and GraphQL. Achieved a highscore of 200 million (4th)
+        on the Deadpool pinball machine on the second floor, also clapped the
+        other interns in pool and ping pong.
+      </>
+    ),
+    extras: (
+      <>
+        <b>DevOps, Backend, Frontend</b>
+      </>
+    ),
     link: 'https://skills.network/',
     image: (
       <Image
@@ -110,32 +205,66 @@ export const searchResults: Content[] = [
   },
   {
     title: 'Google DSC | Project Lead',
-    descripiption: <></>,
+    descripiption: (
+      <>
+        Worked with Flutter, Dart, React, JavaScript, GCP, Go, GraphQL,
+        Postgres, Firebase and Kubernetes.
+      </>
+    ),
+    extras: (
+      <>
+        <b>DevOps, Frontend, Frontend</b>
+      </>
+    ),
     link: 'https://developers.google.com/community/gdsc',
   },
   {
     title: 'AMACSS | Director of IT',
-    descripiption: <></>,
+    descripiption: (
+      <>
+        Oversaw the Frontend team in development of the organization&apos;s new
+        website with Gatsby.
+      </>
+    ),
     link: 'https://amacss.org/',
   },
   {
     title: 'Network Re-Engineered Inc | Software Engineer',
-    descripiption: <></>,
+    descripiption: (
+      <>
+        Worked with React Native, TypeScript, Streamchat, Chatkit and Firebase.
+        Led the development of the messaging and calling feature.
+      </>
+    ),
+    extras: <b>Mobile, Backend</b>,
     link: 'https://www.campusconnect.ca/',
   },
   {
     title: 'Highland Fish and Chips | Fry Cook',
-    descripiption: <></>,
+    descripiption: <>Cooked fish, fries, and mushy peas.</>,
+    extras: <b>British Food</b>,
     link: 'https://goo.gl/maps/hy1oUTesedd9c61d8/',
   },
   {
     title: 'Via Cibo | Line Cook',
-    descripiption: <></>,
+    descripiption: (
+      <>
+        Cooked pizzas, pastas, salads, paninos, piadinas, risottos, pancakes,
+        and more.
+      </>
+    ),
+    extras: <b>Italian Food</b>,
     link: 'https://www.viacibo.com/',
   },
   {
     title: 'Roux | Sous Chef',
-    descripiption: <></>,
+    descripiption: (
+      <>
+        Made croissants, beignets, scones, creme brulee, steaks, fish, shrimp,
+        cornbread, fried chicken, ceviche, omelettes, and more.
+      </>
+    ),
+    extras: <b>Creole Food, French Food</b>,
     link: 'https://goo.gl/maps/GYX2fT4o2yf2DkDr8',
   },
 ]

@@ -1,6 +1,15 @@
 import { ComponentProps } from 'react'
 import { Friend, SocialProfile } from 'src/components'
-import { bryanLiu, dwayneJohnson, github, instagram, jeffZhao, jodiJang, linkedin, youtube } from './b64'
+import {
+  bryanLiu,
+  dwayneJohnson,
+  github,
+  instagram,
+  jeffZhao,
+  jodiJang,
+  linkedin,
+  youtube,
+} from './b64'
 
 type Profile = ComponentProps<typeof SocialProfile>
 
@@ -52,6 +61,6 @@ export const friends: Friends = [
     src: jeffZhao,
     name: 'Jeff Zhao',
     label: 'Eldest Disciple',
-    url: 'https://www.google.com/search?q=Dwayne%20Johnson',
+    url: 'https://kamiyaa.github.io/',
   },
 ]
