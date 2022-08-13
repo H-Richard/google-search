@@ -1,7 +1,5 @@
 @import 'base';
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
 @font-face {
   font-family: 'Product Sans';
   src: url('/fonts/ProductSans-Regular.ttf') format('trueType');
@@ -29,7 +27,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Roboto, arial, sans-serif;
   height: 100%;
 }
 

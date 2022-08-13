@@ -26,10 +26,16 @@ export default function Document() {
           crossOrigin=""
           type="font/ttf"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           rel="preload"
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
           as="style"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
         />
       </Head>
       <body>
