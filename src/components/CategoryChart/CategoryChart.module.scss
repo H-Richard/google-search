@@ -1,0 +1,32 @@
+@import '/src/styles/base';
+
+.container {
+  @include col;
+
+  @include themed-styles {
+    background-color: themed-color(background-contrast);
+  }
+  padding: 20px;
+  border-radius: 10px;
+  gap: 10px;
+
+  h3,
+  h4 {
+    margin: 0;
+  }
+}
+
+.chart {
+  width: min(15vw, 200px);
+  height: min(15vw, 200px);
+
+  @include mobile {
+    width: clamp(150px, 18vw, 200px);
+    height: clamp(150px, 18vw, 200px);
+  }
+}
+
+.value {
+  @include row;
+  justify-content: space-between;
+}

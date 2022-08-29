@@ -4,12 +4,10 @@ import { SearchResult } from 'src/components'
 
 type Content = ComponentProps<typeof SearchResult>
 
-//
-
 export const searchResults: Content[] = [
   {
     title: 'Meta | Software Engineer',
-    descripiption: <>Haven&apos;t done much yet, but its honest work.</>,
+    descripiption: <>Haven&apos;t done much yet, but it&apos;s honest work.</>,
     link: 'https://engineering.fb.com/',
     image: (
       <Image

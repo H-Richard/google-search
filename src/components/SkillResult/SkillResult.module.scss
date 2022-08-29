@@ -1,0 +1,80 @@
+@import '/src/styles/base';
+
+.container {
+  & > span {
+    @include themed-styles {
+      color: white;
+    }
+    margin-right: 8px;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 18px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 47px;
+    text-align: center;
+  }
+
+  height: 50px;
+  @include row;
+  align-items: center;
+  justify-content: space-between;
+  @include themed-styles {
+    border-top: 1px solid themed-color(footer-border);
+    color: themed-color(text-high-contrast);
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(themed-color(background-contrast), 0.4);
+    }
+  }
+  @media (max-width: 500px) {
+    font-size: 14px;
+
+    & > span {
+      margin-left: 0;
+      margin-right: 5px;
+    }
+  }
+}
+
+.value {
+  margin-left: 10%;
+  width: 80px;
+  text-align: right;
+
+  @include mobile {
+    margin-left: 0;
+  }
+}
+
+.name {
+  width: 40%;
+
+  @media (max-width: 500px) {
+    width: 70px;
+  }
+  @media (max-width: 400px) {
+    width: 30px;
+  }
+}
+
+.change {
+  margin-left: 5%;
+  text-align: right;
+  width: 80px;
+
+  @include mobile {
+    width: 70px;
+    margin-left: 0px;
+  }
+}
+
+.percent {
+  @include row;
+  justify-content: flex-end;
+  width: 120px;
+
+  @include mobile {
+    width: 80px;
+  }
+}
