@@ -1,0 +1,60 @@
+@import '/src/styles/base';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  flex: 1;
+
+  width: 80vw;
+  max-width: 1000px;
+
+  font-family: Product Sans, sans-serif;
+  font-weight: 500;
+
+  @include themed-styles {
+    text {
+      fill: themed-color(text-high-contrast) !important;
+    }
+  }
+
+  @include mobile {
+    padding: 0 15px;
+    width: 100vw;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 10px !important;
+  }
+
+  margin: 20px 0;
+}
+
+.list {
+  @include col;
+  flex: 1;
+
+  @include themed-styles {
+    h3 {
+      color: themed-color(text-high-contrast);
+    }
+  }
+}
+
+.lists {
+  @include row;
+  gap: 10px;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.categories {
+  @include row;
+  justify-content: space-between;
+  gap: 10px;
+
+  overflow-x: scroll;
+  @include hide-scroll;
+}

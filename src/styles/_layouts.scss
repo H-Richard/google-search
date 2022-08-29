@@ -38,3 +38,11 @@ $desktop-width: 1000px;
     padding-left: 0px;
   }
 }
+
+@mixin hide-scroll {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
