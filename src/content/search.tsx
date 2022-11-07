@@ -7,7 +7,7 @@ type Content = ComponentProps<typeof SearchResult>
 export const searchResults: Content[] = [
   {
     title: 'Meta | Software Engineer',
-    descripiption: <>Haven&apos;t done much yet, but it&apos;s honest work.</>,
+    description: <>Haven&apos;t done much yet, but it&apos;s honest work.</>,
     link: 'https://engineering.fb.com/',
     image: (
       <Image
@@ -20,7 +20,7 @@ export const searchResults: Content[] = [
   },
   {
     title: 'Augmentr | Engineering Lead',
-    descripiption: (
+    description: (
       <>
         Working with NestJS, Prisma, Postgres, AWS S3, CDK, EKS, Kubernetes,
         GraphQL, and TypeScript.
@@ -40,7 +40,7 @@ export const searchResults: Content[] = [
   },
   {
     title: 'Coinbase | Software Engineer',
-    descripiption: (
+    description: (
       <>
         Worked with React Native, TypeScript, Go, gRPC, and GraphQL. Was laid
         off after the company discovered that he stole 3 cans LaCroix&trade;
@@ -65,7 +65,7 @@ export const searchResults: Content[] = [
   },
   {
     title: 'University of Toronto | Researcher',
-    descripiption: (
+    description: (
       <>
         Bridging the gap between human and AI with Maia, a human-like chess
         engine built atop AlphaZero/Leela. Leveraged advanced Reinforcement
@@ -91,7 +91,7 @@ export const searchResults: Content[] = [
   },
   {
     title: 'Shopify | Software Developer Intern',
-    descripiption: (
+    description: (
       <>
         Worked with Ruby on Rails, React, TypeScript, MySQL, and GraphQL. Took a
         lot of snacks (n &gt;= 20) from the office once and nobody found out.
@@ -115,7 +115,7 @@ export const searchResults: Content[] = [
   },
   {
     title: 'University of Toronto | Teaching Assistant',
-    descripiption: (
+    description: (
       <>
         TA&apos;d Computability and Computational Complexity, Discrete Math,
         Linear Algebra II, and Calculus I.
@@ -135,7 +135,7 @@ export const searchResults: Content[] = [
   },
   {
     title: 'Amazon | Software Development Engineer Intern',
-    descripiption: (
+    description: (
       <>
         Worked with AWS CDK, SageMaker, S3, DynamoDB, PrestoDB, Glue, Redshift,
         Athena, Lambda, Express, Lambda, PySpark, React and TypeScript. Built
@@ -161,7 +161,7 @@ export const searchResults: Content[] = [
   },
   {
     title: 'NorthBoys | Software Engineer',
-    descripiption: (
+    description: (
       <>
         Worked with React, TypeScript, and Redux. Built a performant point of
         sale application used by the physical retailers of the business.
@@ -176,7 +176,7 @@ export const searchResults: Content[] = [
   },
   {
     title: 'IBM | Software Engineer Intern',
-    descripiption: (
+    description: (
       <>
         Worked with Elixir, Ruby, Python, Go, JavaScript, Kubernetes, Helm,
         Docker, AWS S3, and GraphQL. Achieved a highscore of 200 million (4th)
@@ -202,7 +202,7 @@ export const searchResults: Content[] = [
   },
   {
     title: 'Google DSC | Project Lead',
-    descripiption: (
+    description: (
       <>
         Worked with Flutter, Dart, React, JavaScript, GCP, Go, GraphQL,
         Postgres, Firebase and Kubernetes.
@@ -217,7 +217,7 @@ export const searchResults: Content[] = [
   },
   {
     title: 'AMACSS | Director of IT',
-    descripiption: (
+    description: (
       <>
         Oversaw the Frontend team in development of the organization&apos;s new
         website with Gatsby.
@@ -227,7 +227,7 @@ export const searchResults: Content[] = [
   },
   {
     title: 'Network Re-Engineered Inc | Software Engineer',
-    descripiption: (
+    description: (
       <>
         Worked with React Native, TypeScript, Streamchat, Chatkit and Firebase.
         Led the development of the messaging and calling feature.
@@ -238,13 +238,13 @@ export const searchResults: Content[] = [
   },
   {
     title: 'Highland Fish and Chips | Fry Cook',
-    descripiption: <>Cooked fish, fries, and mushy peas.</>,
+    description: <>Cooked fish, fries, and mushy peas.</>,
     extras: <b>British Food</b>,
     link: 'https://goo.gl/maps/hy1oUTesedd9c61d8/',
   },
   {
     title: 'Via Cibo | Line Cook',
-    descripiption: (
+    description: (
       <>
         Cooked pizzas, pastas, salads, paninos, piadinas, risottos, pancakes,
         and more.
@@ -255,7 +255,7 @@ export const searchResults: Content[] = [
   },
   {
     title: 'Roux | Sous Chef',
-    descripiption: (
+    description: (
       <>
         Made croissants, beignets, scones, creme brulee, steaks, fish, shrimp,
         cornbread, fried chicken, ceviche, omelettes, and more.
