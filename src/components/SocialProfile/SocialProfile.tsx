@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import styles from './SocialProfile.module.scss'
 
@@ -12,7 +12,7 @@ export const SocialProfile: React.FC<Props> = ({ src, label, url }) => {
   return (
     <a className={styles.container} href={url} target="_blank" rel="noreferrer">
       <div className={styles.image}>
-        <Image src={src} alt={label} layout="fill" objectFit="contain" />
+        <Image src={src} alt={label} layout="fill" />
       </div>
       {label}
     </a>

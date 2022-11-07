@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { ThemeContext } from 'src/contexts'
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 interface Props {
   height?: number
@@ -14,7 +14,6 @@ export const Logo: React.FC<Props> = ({ height = 92, width = 272 }) => {
   return (
     <Image
       priority
-      layout="fixed"
       height={height}
       width={width}
       alt="themed-logo"

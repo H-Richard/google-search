@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import styles from './Friend.module.scss'
 
 interface Props {
@@ -12,7 +12,7 @@ export const Friend: React.FC<Props> = ({ url, name, label, src }: Props) => {
   return (
     <a className={styles.container} href={url} target="_blank" rel="noreferrer">
       <div className={styles.image}>
-        <Image src={src} alt={name} layout="fill" objectFit="contain" />
+        <Image src={src} alt={name} layout="fill" />
       </div>
       <div className={styles.text}>
         <p className={styles.name}>{name}</p>

@@ -1,0 +1,125 @@
+@import '/src/styles/base';
+
+.container {
+  @include col;
+  margin-top: 20px;
+}
+
+.chart {
+  height: 325px;
+  width: 65%;
+  @include mobile {
+    height: 270px;
+    width: 100%;
+  }
+}
+
+.title {
+  @include themed-styles {
+    h2 {
+      font-family: Product Sans, sans-serif;
+      font-size: 24px;
+      margin: 4px 0 10px;
+      font-weight: 400;
+      color: themed-color(text-high-contrast);
+    }
+
+    span {
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    border-bottom: 1px solid themed-color(footer-border);
+  }
+}
+
+.stats {
+  margin-top: 10px;
+
+  & > div {
+    @include row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @include themed-styles {
+    h1 {
+      font-family: Product Sans, sans-serif;
+      margin: 0;
+      color: themed-color(text-high-contrast);
+      font-weight: 400;
+    }
+
+    span {
+    }
+  }
+}
+
+.range {
+  @include row;
+
+  font-weight: 400;
+  font-size: 12px;
+  height: 40px;
+
+  overflow-x: scroll;
+  @include hide-scroll;
+
+  button {
+    font-family: Product Sans, sans-serif;
+    @include mobile {
+      min-width: 50px;
+      padding: 0px 10px;
+    }
+    margin: 5px;
+    font-weight: 500 !important;
+    border: none;
+    outline: none;
+    background-color: unset;
+    padding: 0 15px;
+    @include themed-styles {
+      color: themed-color(text-low-contrast);
+    }
+  }
+
+  .active {
+    @include themed-styles {
+      color: themed-color(secondary-accent);
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      text-decoration-thickness: 2.5px;
+    }
+  }
+}
+
+.current {
+  @include row;
+}
+
+.related {
+  padding: 17px;
+  border-radius: 12px;
+  @include col;
+  width: 35%;
+  position: relative;
+
+  h2 {
+    position: absolute;
+    margin: 0;
+  }
+
+  justify-content: space-between;
+  height: 325px;
+
+  @include themed-styles {
+    background-color: rgba(themed-color(secondary-accent), 0.4);
+    h2 {
+      color: themed-color(text-high-contrast) !important;
+    }
+  }
+  color: black !important;
+
+  @include mobile {
+    display: none;
+  }
+}

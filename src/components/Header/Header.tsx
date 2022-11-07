@@ -101,6 +101,7 @@ export const Header: React.FC = () => {
             </Link>
           )
         })}
+        <div className={styles.overlay} />
       </div>
     </div>
   )

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { SearchLink } from 'src/components'
 import styles from './VideoResult.module.scss'
 
@@ -32,7 +32,6 @@ export const VideoResult: React.FC<Props> = ({
           <Image
             src={`https://i1.ytimg.com/vi/${id}/mqdefault.jpg`}
             layout="fill"
-            objectFit="contain"
             alt="thumbnail"
           />
         </div>
