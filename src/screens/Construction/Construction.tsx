@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import Image from "next/legacy/image";
+import Image from 'next/image'
 
 import styles from './Construction.module.scss'
 
@@ -10,8 +10,7 @@ export const Construction: NextPage = () => {
         <Image
           src="https://source.unsplash.com/x-ghf9LjrVg"
           alt="construction"
-          layout="fill"
-          objectFit="cover"
+          fill
           priority
         />
       </div>

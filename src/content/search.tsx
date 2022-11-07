@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/image'
 import { ComponentProps } from 'react'
 import { SearchResult } from 'src/components'
 
@@ -13,9 +13,8 @@ export const searchResults: Content[] = [
       <Image
         src="https://avatars.githubusercontent.com/u/69631?s=200&v=4"
         alt="meta logo"
-        layout="fill"
-        objectFit="contain"
         priority
+        fill
       />
     ),
   },

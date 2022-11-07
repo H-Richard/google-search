@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import Image from "next/legacy/image";
+import Image from 'next/image'
 import { images } from 'src/content'
 
 import styles from './Images.module.scss'
@@ -18,10 +18,7 @@ export const Images: NextPage = () => {
               <Image
                 src={`https://source.unsplash.com/${id}`}
                 alt="photography image"
-                layout="responsive"
-                objectFit="contain"
-                width={0}
-                height={0}
+                fill
                 priority
               />
             </div>

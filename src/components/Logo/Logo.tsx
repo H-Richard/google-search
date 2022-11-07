@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { ThemeContext } from 'src/contexts'
 
-import Image from "next/image";
+import Image from 'next/image'
 
 interface Props {
   height?: number
