@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import { images } from 'src/content'
 
 import styles from './Images.module.scss'

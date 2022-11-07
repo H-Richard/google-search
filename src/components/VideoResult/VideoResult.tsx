@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import { SearchLink } from 'src/components'
 import styles from './VideoResult.module.scss'
 

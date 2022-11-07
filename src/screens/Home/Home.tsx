@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import { About, SearchResult, LoadTime } from 'src/components'
 import { searchResults } from 'src/content'
 

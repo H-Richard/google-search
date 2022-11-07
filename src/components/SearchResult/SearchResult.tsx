@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import { SearchLink } from '../SearchLink'
 
 import styles from './SearchResult.module.scss'
