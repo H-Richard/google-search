@@ -61,8 +61,10 @@ a {
 
 .root {
   @include col;
+
+  height: auto;
+  min-height: 100vh;
   flex: 1;
-  overflow: scroll;
 
   @include themed-styles {
     background-color: themed-color(background);

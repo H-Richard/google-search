@@ -14,7 +14,6 @@ export const Logo: React.FC<Props> = ({ height = 92, width = 272 }) => {
   return (
     <Image
       priority
-      layout="fixed"
       height={height}
       width={width}
       alt="themed-logo"

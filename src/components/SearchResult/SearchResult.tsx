@@ -18,7 +18,7 @@ const about = (
 interface Props {
   link: string
   title: string
-  descripiption: JSX.Element
+  description: JSX.Element
   extras?: JSX.Element
   image?: JSX.Element
 }
@@ -26,7 +26,7 @@ interface Props {
 export const SearchResult: React.FC<Props> = ({
   link,
   title,
-  descripiption,
+  description,
   extras,
   image,
 }: Props) => {
@@ -52,7 +52,7 @@ export const SearchResult: React.FC<Props> = ({
         </a>
         <div className={styles.preview}>
           <div className={styles.text}>
-            <div className={styles.description}>{descripiption}</div>
+            <div className={styles.description}>{description}</div>
             {extras && <div className={styles.extras}>{extras}</div>}
           </div>
           {image && <div className={styles.image}>{image}</div>}

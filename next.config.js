@@ -12,6 +12,9 @@ const nextConfig = {
     ],
     minimumCacheTTL: 86400,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
 
 module.exports = nextConfig

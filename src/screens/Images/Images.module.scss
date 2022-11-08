@@ -3,7 +3,7 @@
 .container {
   column-count: 3;
   column-gap: 20px;
-  height: auto;
+  flex: 1;
   margin: 20px;
 
   @include mobile {

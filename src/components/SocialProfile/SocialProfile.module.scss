@@ -19,11 +19,12 @@
       @include themed-styles {
         border: 1px solid themed-color(footer-border) !important;
       }
-
       img {
         height: 22px !important;
         width: 22px !important;
         min-height: 0 !important;
+        margin-left: calc((44px - 22px) / 2 - 1px);
+        margin-top: calc((44px - 22px) / 2 - 1px);
       }
     }
   }

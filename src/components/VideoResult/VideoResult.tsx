@@ -31,9 +31,8 @@ export const VideoResult: React.FC<Props> = ({
         <div className={styles.thumbnail}>
           <Image
             src={`https://i1.ytimg.com/vi/${id}/mqdefault.jpg`}
-            layout="fill"
-            objectFit="contain"
             alt="thumbnail"
+            fill
           />
         </div>
         <div className={styles.description}>
