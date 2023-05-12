@@ -25,6 +25,11 @@ export const useTheme = (): [Theme, VoidFunction] => {
     }
   }, [defaultTheme, isClient, setTheme, theme])
 
+  useEffect(() => {
+    document.body.style.backgroundColor =
+      theme === 'dark' ? '#171717' : '#ffffff'
+  }, [theme])
+
   const toggleTheme = useCallback(
     () => setTheme(theme === 'light' ? 'dark' : 'light'),
     [setTheme, theme]
