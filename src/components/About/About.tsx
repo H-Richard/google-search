@@ -20,12 +20,12 @@ export const About: React.FC = () => {
         <h4>About</h4>
         <div className={styles.website}>{globe} h-richard.com</div>
         <p className={styles.description}>
-          Richard Hong is a Chinese-Canadian software engineer, computer scientist
-          and cook. He is currently located in <b>San Francisco, CA</b> and works as a
-          Software Engineer at Meta. He occasionally posts educational software
-          engineering videos on his YouTube channel. In the future, Richard
-          hopes to own and drive the all new{' '}
-          <b>2023 Ford F150&reg; Lightning&trade; Pro</b>.
+          Richard Hong is a Chinese-Canadian software engineer, computer
+          scientist and cook. He is currently located in{' '}
+          <b>San Francisco, CA</b> and works as a Software Engineer at Meta. He
+          occasionally posts educational software engineering videos on his
+          YouTube channel. In the future, Richard hopes to own and drive the all
+          new <b>2023 Ford F150&reg; Lightning&trade; Pro</b>.
         </p>
         <div className={styles.stat}>
           <span>Born: </span>February, 2000 (age{' '}

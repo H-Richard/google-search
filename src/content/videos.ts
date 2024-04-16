@@ -5,6 +5,20 @@ type Video = ComponentProps<typeof VideoResult>
 
 export const videos: Video[] = [
   {
+    id: 'bdCgeJjQqow',
+    title: 'Building Performant Rust Backend Services on AWS Free Tier',
+    description: `Building a simple GraphQL API with me using Rust, Lambda and DynamoDB.
+
+    Source code: https://github.com/H-Richard/rust-graphql-lambda
+    
+    Learn more about Rust: https://www.rust-lang.org/
+    Learn more about Lambda: https://aws.amazon.com/lambda/
+    Learn more about GraphQL: https://graphql.org/
+    Learn more about DynamoDB: https://aws.amazon.com/dynamodb/
+    Learn more about AWS Free Tier: https://aws.amazon.com/free/`,
+    uploadDate: 'April 16, 2024',
+  },
+  {
     title: 'How I Build Backend Services in 2022',
     id: 'twi33GVRazE',
     description: `Building a simple GraphQL API with me using TypeScript, NestJS, and Prisma. 
