@@ -3,7 +3,7 @@
 .container {
   font-family: Roboto, arial, sans-serif;
   @include row;
-  gap: 5px;
+  gap: 8px;
   margin-bottom: 30px;
 
   @include mobile {

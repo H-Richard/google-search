@@ -7,7 +7,13 @@ type Content = ComponentProps<typeof SearchResult>
 export const searchResults: Content[] = [
   {
     title: 'Meta | Software Engineer',
-    description: <>Haven&apos;t done much yet, but it&apos;s honest work.</>,
+    description: (
+      <>
+        Engineering lead in VR Growth and VR Travel. Spearheaded novel ML products to increase social connections and interactions.
+        Scoped, designed and led the execution of a 20+ project roadmap, across 17 researchers and engineers.
+      </>
+    ),
+    extras: <b>Backend, Infra, Machine Learning, Frontend, DevOps, Mobile</b>,
     link: 'https://engineering.fb.com/',
     image: (
       <Image
@@ -22,7 +28,7 @@ export const searchResults: Content[] = [
     title: 'Augmentr | Engineering Lead',
     description: (
       <>
-        Working with NestJS, Prisma, Postgres, AWS S3, CDK, EKS, Kubernetes,
+        Worked with NestJS, Prisma, Postgres, AWS S3, CDK, EKS, Kubernetes,
         GraphQL, and TypeScript.
       </>
     ),
@@ -145,7 +151,7 @@ export const searchResults: Content[] = [
     ),
     extras: (
       <>
-        <b>Data, Infra, DevOps, Frontend, Backend</b>
+        <b>Data, Infra, DevOps, Backend</b>
       </>
     ),
     link: 'https://www.amazon.com/',
@@ -210,7 +216,7 @@ export const searchResults: Content[] = [
     ),
     extras: (
       <>
-        <b>DevOps, Frontend, Frontend</b>
+        <b>DevOps, Backend, Frontend</b>
       </>
     ),
     link: 'https://developers.google.com/community/gdsc',
