@@ -9,8 +9,10 @@ export const searchResults: Content[] = [
     title: 'Meta | Software Engineer',
     description: (
       <>
-        Engineering lead in VR Growth and VR Travel. Spearheaded novel ML products to increase social connections and interactions.
-        Scoped, designed and led the execution of a 20+ project roadmap, across 17 researchers and engineers.
+        Engineering lead in VR Growth and VR Travel. Spearheaded novel ML
+        products to increase social connections and interactions. Scoped,
+        designed, and led the execution of a 20+ project roadmap, across 17
+        researchers and engineers.
       </>
     ),
     extras: <b>Backend, Infra, Machine Learning, Frontend, DevOps, Mobile</b>,

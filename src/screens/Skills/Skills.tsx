@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import { useState } from 'react'
+import { SetStateAction, useCallback, useEffect, useState } from 'react'
 import { CategoryChart, SkillChart, SkillResult } from 'src/components'
 import {
   backendData,
@@ -16,9 +16,30 @@ import { SkillsContext } from 'src/contexts'
 import styles from './Skills.module.scss'
 export const Skills: NextPage = () => {
   const [skill, setSkill] = useState('React')
+  const [selected, setSelected] = useState(false)
+
+  useEffect(() => {
+    if (selected) return
+    const interval = setInterval(() => {
+      const category = [frameworks, languages, services, tools][
+        Math.floor(4 * Math.random())
+      ]
+      setSkill(category[Math.floor(category.length * Math.random())].name)
+    }, 3 * 1000)
+
+    return () => clearInterval(interval)
+  }, [selected])
+
+  const handleSetSkill = useCallback(
+    (skill: SetStateAction<string>) => {
+      setSelected(true)
+      setSkill(skill)
+    },
+    [setSelected, setSkill]
+  )
 
   return (
-    <SkillsContext.Provider value={{ skill, setSkill }}>
+    <SkillsContext.Provider value={{ skill, setSkill: handleSetSkill }}>
       <div className={styles.container}>
         <div className={styles.categories}>
           <CategoryChart name="Frontend" data={frontendData} />
